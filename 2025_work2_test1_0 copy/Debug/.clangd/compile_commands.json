@@ -1,5 +1,6 @@
 [
    {
+<<<<<<< HEAD
       "directory" : "D:/Git/example/2025_work2_test1_0 copy/Debug",
       "command"   : "clang++ -I\"D:/Git/example/2025_work2_test1_0 copy\" -I\"D:/Git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_1_30_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_1_30_00_03/source\" -I\"D:/Git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/include/c\" -I\"D:/Git/example/2025_work2_test1_0 copy/Debug/syscfg\"",
       "file"      : "D:/Git/example/2025_work2_test1_0 copy/User/AD9959.c"
@@ -53,5 +54,65 @@
       "directory" : "D:/Git/example/2025_work2_test1_0 copy/Debug",
       "command"   : "clang++ -I\"D:/Git/example/2025_work2_test1_0 copy\" -I\"D:/Git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_1_30_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_1_30_00_03/source\" -I\"D:/Git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/include/c\" -I\"D:/Git/example/2025_work2_test1_0 copy/Debug/syscfg\"",
       "file"      : "D:/Git/example/2025_work2_test1_0 copy/test1.0.c"
+=======
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/User/AD9959.c"
+   },
+   {
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/User/BTN.c"
+   },
+   {
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/User/DDS.c"
+   },
+   {
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/User/Encoder.c"
+   },
+   {
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/User/GET_FREQ.c"
+   },
+   {
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/User/Tick.c"
+   },
+   {
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/User/UI.c"
+   },
+   {
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/User/UserADC.c"
+   },
+   {
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/User/UserTask.c"
+   },
+   {
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/User/UserUART.c"
+   },
+   {
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/test1.0.c"
+   },
+   {
+      "directory" : "D:/git/example/2025_work2_test1_0 copy/Debug",
+      "command"   : "clang++ -D__MSPM0G3507__ -I\"D:/git/example/2025_work2_test1_0 copy\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_01_00_03/source\" -I\"D:/git/example/2025_work2_test1_0 copy/User\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -I\"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg\" -xc",
+      "file"      : "D:/git/example/2025_work2_test1_0 copy/Debug/syscfg/ti_msp_dl_config.c"
+>>>>>>> c6cfcb4f368edcb2f7651107066af934416be619
    }
 ]
