@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS
+CG_TOOL_ROOT := C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS
 
 GEN_OPTS__FLAG := @"syscfg/device.opt" 
 GEN_CMDS__FLAG := -Wl,-l"syscfg/device_linker.cmd" 
@@ -148,7 +148,7 @@ all: $(OBJS) $(GEN_CMDS)
 2025_work2_test1_0\ copy.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/bin/tiarmclang.exe" @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"2025_work2_test1_0 copy.map" -Wl,-i"C:/ti/mspm0_sdk_1_30_00_03/source" -Wl,-i"D:/Git/example/2025_work2_test1_0 copy/Debug/syscfg" -Wl,-i"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="2025_work2_test1_0 copy_linkInfo.xml" -Wl,--rom_model -o "2025_work2_test1_0 copy.out" $(ORDERED_OBJS)
+	"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"2025_work2_test1_0 copy.map" -Wl,-i"C:/ti/mspm0_sdk_2_01_00_03/source" -Wl,-i"D:/git/example/2025_work2_test1_0 copy/Debug/syscfg" -Wl,-i"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="2025_work2_test1_0 copy_linkInfo.xml" -Wl,--rom_model -o "2025_work2_test1_0 copy.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
