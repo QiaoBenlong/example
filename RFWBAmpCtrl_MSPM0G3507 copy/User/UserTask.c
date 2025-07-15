@@ -1,4 +1,5 @@
 #include "UserTask.h"
+#include <sys/cdefs.h>
 
 
 volatile uint16_t UITick = 0;
@@ -6,17 +7,36 @@ volatile uint16_t UIInfoTick = UI_INFO_TIME; // INFO界面显示倒计时
 volatile uint16_t RGBLEDTick = 0;
 volatile uint16_t UARTTick = 0;
 
+char sweep_number = 0;
 
+/*******************USER任务******************/
 void UserTask_init(void) {
     UserADC_init();
-    ENC_init();
+    ENC_init();    
     UI_init();
-    AD_init();
+/****DDS模块初始化***/
+    DDS_init();//初始化AD9959
+    initSingleToneParam();//初始化点频
+    initSweepParam();//初始化扫频
+    DDS_update();//DDS刷新
+    //AD_init();
 }
 
 void UserTask_loop(void) {
-    AD_loop();
+    //AD_loop();
 }
+
+
+void getlength(){
+    sweep_number = 0;
+    volatile float sweep_step = 0;
+
+    
+}
+
+
+
+
 
 
 

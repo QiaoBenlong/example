@@ -165,10 +165,10 @@ extern "C" {
 #define ADC0_INST_INT_IRQN                                       (ADC0_INT_IRQn)
 #define ADC0_ADCMEM_0                                         DL_ADC12_MEM_IDX_0
 #define ADC0_ADCMEM_0_REF                        DL_ADC12_REFERENCE_VOLTAGE_VDDA
-#define ADC0_ADCMEM_0_REF_VOLTAGE_V                                          3.3
+#define ADC0_ADCMEM_0_REF_VOLTAGE                                             -1 // VDDA cannot be determined
 #define ADC0_ADCMEM_1                                         DL_ADC12_MEM_IDX_1
 #define ADC0_ADCMEM_1_REF                        DL_ADC12_REFERENCE_VOLTAGE_VDDA
-#define ADC0_ADCMEM_1_REF_VOLTAGE_V                                          3.3
+#define ADC0_ADCMEM_1_REF_VOLTAGE                                             -1 // VDDA cannot be determined
 #define GPIO_ADC0_C0_PORT                                                  GPIOA
 #define GPIO_ADC0_C0_PIN                                          DL_GPIO_PIN_27
 #define GPIO_ADC0_C1_PORT                                                  GPIOA
@@ -180,7 +180,7 @@ extern "C" {
 #define ADC1_INST_INT_IRQN                                       (ADC1_INT_IRQn)
 #define ADC1_ADCMEM_0                                         DL_ADC12_MEM_IDX_0
 #define ADC1_ADCMEM_0_REF                        DL_ADC12_REFERENCE_VOLTAGE_VDDA
-#define ADC1_ADCMEM_0_REF_VOLTAGE_V                                          3.3
+#define ADC1_ADCMEM_0_REF_VOLTAGE                                             -1 // VDDA cannot be determined
 #define GPIO_ADC1_C0_PORT                                                  GPIOA
 #define GPIO_ADC1_C0_PIN                                          DL_GPIO_PIN_15
 
