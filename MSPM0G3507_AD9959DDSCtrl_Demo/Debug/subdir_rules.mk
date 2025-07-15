@@ -8,14 +8,14 @@ SHELL = cmd.exe
 %.o: ../%.c $(GEN_OPTS) | $(GEN_FILES) $(GEN_MISC_FILES)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: Arm Compiler'
-	"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/bin/tiarmclang.exe" -c @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo" -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo/Debug" -I"C:/ti/mspm0_sdk_2_05_01_00/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_05_01_00/source" -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo/User" -gdwarf-3 -MMD -MP -MF"$(basename $(<F)).d_raw" -MT"$(@)" -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo/Debug/syscfg"  $(GEN_OPTS__FLAG) -o"$@" "$<"
+	"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" -c @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo" -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo/Debug" -I"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_03_00_07/source" -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo/User" -gdwarf-3 -MMD -MP -MF"$(basename $(<F)).d_raw" -MT"$(@)" -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo/Debug/syscfg"  $(GEN_OPTS__FLAG) -o"$@" "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
 build-1336515935: ../MSPM0G3507_AD9959DDSCtrl_Demo.syscfg
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: SysConfig'
-	"C:/ti/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo/MSPM0G3507_AD9959DDSCtrl_Demo.syscfg" -o "syscfg" -s "C:/ti/mspm0_sdk_2_05_01_00/.metadata/product.json" --compiler ticlang
+	"C:/ti/sysconfig_1.22.0/sysconfig_cli.bat" --script "D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo/MSPM0G3507_AD9959DDSCtrl_Demo.syscfg" -o "syscfg" -s "C:/ti/mspm0_sdk_2_03_00_07/.metadata/product.json" --compiler ticlang
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
@@ -30,14 +30,14 @@ syscfg: build-1336515935
 syscfg/%.o: ./syscfg/%.c $(GEN_OPTS) | $(GEN_FILES) $(GEN_MISC_FILES)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: Arm Compiler'
-	"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/bin/tiarmclang.exe" -c @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo" -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo/Debug" -I"C:/ti/mspm0_sdk_2_05_01_00/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_05_01_00/source" -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo/User" -gdwarf-3 -MMD -MP -MF"syscfg/$(basename $(<F)).d_raw" -MT"$(@)" -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo/Debug/syscfg"  $(GEN_OPTS__FLAG) -o"$@" "$<"
+	"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" -c @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo" -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo/Debug" -I"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_03_00_07/source" -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo/User" -gdwarf-3 -MMD -MP -MF"syscfg/$(basename $(<F)).d_raw" -MT"$(@)" -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo/Debug/syscfg"  $(GEN_OPTS__FLAG) -o"$@" "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
-startup_mspm0g350x_ticlang.o: C:/ti/mspm0_sdk_2_05_01_00/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c $(GEN_OPTS) | $(GEN_FILES) $(GEN_MISC_FILES)
+startup_mspm0g350x_ticlang.o: C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c $(GEN_OPTS) | $(GEN_FILES) $(GEN_MISC_FILES)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: Arm Compiler'
-	"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/bin/tiarmclang.exe" -c @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo" -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo/Debug" -I"C:/ti/mspm0_sdk_2_05_01_00/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_05_01_00/source" -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo/User" -gdwarf-3 -MMD -MP -MF"$(basename $(<F)).d_raw" -MT"$(@)" -I"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo/Debug/syscfg"  $(GEN_OPTS__FLAG) -o"$@" "$<"
+	"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" -c @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo" -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo/Debug" -I"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include" -I"C:/ti/mspm0_sdk_2_03_00_07/source" -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo/User" -gdwarf-3 -MMD -MP -MF"$(basename $(<F)).d_raw" -MT"$(@)" -I"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo/Debug/syscfg"  $(GEN_OPTS__FLAG) -o"$@" "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 

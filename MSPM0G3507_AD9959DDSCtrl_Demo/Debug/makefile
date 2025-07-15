@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS
+CG_TOOL_ROOT := C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS
 
 GEN_OPTS__FLAG := @"syscfg/device.opt" 
 GEN_CMDS__FLAG := -Wl,-l"syscfg/device_linker.cmd" 
@@ -142,7 +142,7 @@ all: $(OBJS) $(GEN_CMDS)
 MSPM0G3507_AD9959DDSCtrl_Demo.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/bin/tiarmclang.exe" @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"MSPM0G3507_AD9959DDSCtrl_Demo.map" -Wl,-i"C:/ti/mspm0_sdk_2_05_01_00/source" -Wl,-i"C:/Users/19351/workspace_ccstheia/MSPM0G3507_AD9959DDSCtrl_Demo/Debug/syscfg" -Wl,-i"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="MSPM0G3507_AD9959DDSCtrl_Demo_linkInfo.xml" -Wl,--rom_model -o "MSPM0G3507_AD9959DDSCtrl_Demo.out" $(ORDERED_OBJS)
+	"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"MSPM0G3507_AD9959DDSCtrl_Demo.map" -Wl,-i"C:/ti/mspm0_sdk_2_03_00_07/source" -Wl,-i"D:/git/example/MSPM0G3507_AD9959DDSCtrl_Demo/Debug/syscfg" -Wl,-i"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="MSPM0G3507_AD9959DDSCtrl_Demo_linkInfo.xml" -Wl,--rom_model -o "MSPM0G3507_AD9959DDSCtrl_Demo.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 

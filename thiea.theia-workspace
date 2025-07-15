@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {
+      "path": "file:///d%3A/workspace_ccstheia/RFWBAmpCtrl_MSPM0G3507"
+    },
+    {
+      "path": "file:///d%3A/workspace_ccstheia"
+    },
+    {
+      "path": ""
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "ti_msp_dl_config.h": "c",
+      "usertask.h": "c",
+      "tick.h": "c",
+      "btn.h": "c",
+      "stdint.h": "c",
+      "ui.h": "c",
+      "useruart.h": "c",
+      "useradc.h": "c"
+    }
+  }
+}
