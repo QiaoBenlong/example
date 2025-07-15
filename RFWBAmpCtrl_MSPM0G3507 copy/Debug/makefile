@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS
+CG_TOOL_ROOT := C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS
 
 GEN_OPTS__FLAG := @"syscfg/device.opt" 
 GEN_CMDS__FLAG := -Wl,-l"syscfg/device_linker.cmd" 
@@ -154,14 +154,14 @@ all: $(OBJS) $(GEN_CMDS)
 RFWBAmpCtrl_MSPM0G3507\ copy.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"RFWBAmpCtrl_MSPM0G3507 copy.map" -Wl,-i"C:/ti/mspm0_sdk_2_01_00_03/source" -Wl,-i"D:/git/example/RFWBAmpCtrl_MSPM0G3507 copy/Debug/syscfg" -Wl,-i"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="RFWBAmpCtrl_MSPM0G3507 copy_linkInfo.xml" -Wl,--rom_model -o "RFWBAmpCtrl_MSPM0G3507 copy.out" $(ORDERED_OBJS)
+	"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/bin/tiarmclang.exe" @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"RFWBAmpCtrl_MSPM0G3507 copy.map" -Wl,-i"C:/ti/mspm0_sdk_1_30_00_03/source" -Wl,-i"D:/Git/example/RFWBAmpCtrl_MSPM0G3507 copy/Debug/syscfg" -Wl,-i"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="RFWBAmpCtrl_MSPM0G3507 copy_linkInfo.xml" -Wl,--rom_model -o "RFWBAmpCtrl_MSPM0G3507 copy.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 RFWBAmpCtrl_MSPM0G3507\ copy.txt: $(EXE_OUTPUTS)
 	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: Arm Hex Utility'
-	"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmhex.exe" --diag_wrap=off --ti_txt -o "RFWBAmpCtrl_MSPM0G3507 copy.txt" $(EXE_OUTPUTS__QUOTED)
+	"C:/ti/ccs2001/ccs/tools/compiler/ti-cgt-armllvm_4.0.1.LTS/bin/tiarmhex.exe" --diag_wrap=off --ti_txt -o "RFWBAmpCtrl_MSPM0G3507 copy.txt" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 
