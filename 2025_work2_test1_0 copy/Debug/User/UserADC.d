@@ -1,6 +1,6 @@
 # FIXED
 
-User/UserTask.o: ../User/UserTask.c ../User/UserTask.h \
+User/UserADC.o: ../User/UserADC.c ../User/UserADC.h \
  syscfg/ti_msp_dl_config.h \
  C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/msp.h \
  C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/DeviceFamily.h \
@@ -74,10 +74,10 @@ User/UserTask.o: ../User/UserTask.c ../User/UserTask.h \
  C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/dl_wwdt.h \
  C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/m0p/dl_interrupt.h \
  C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/m0p/dl_systick.h \
- ../User/Tick.h ../User/Encoder.h ../User/BTN.h ../User/UI.h \
- ../User/UserUART.h ../User/RGBLED.h ../User/UserADC.h ../User/DDS.h \
- ../User/AD9959.h
-../User/UserTask.h:
+ ../User/Tick.h ../User/UserTask.h ../User/DDS.h ../User/AD9959.h \
+ ../User/Encoder.h ../User/UI.h ../User/UserUART.h ../User/BTN.h \
+ ../User/GET_FREQ.h
+../User/UserADC.h:
 syscfg/ti_msp_dl_config.h:
 C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/msp.h:
 C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/DeviceFamily.h:
@@ -152,11 +152,11 @@ C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/dl_wwdt.h:
 C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/m0p/dl_interrupt.h:
 C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/m0p/dl_systick.h:
 ../User/Tick.h:
-../User/Encoder.h:
-../User/BTN.h:
-../User/UI.h:
-../User/UserUART.h:
-../User/RGBLED.h:
-../User/UserADC.h:
+../User/UserTask.h:
 ../User/DDS.h:
 ../User/AD9959.h:
+../User/Encoder.h:
+../User/UI.h:
+../User/UserUART.h:
+../User/BTN.h:
+../User/GET_FREQ.h:
