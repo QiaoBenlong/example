@@ -7,7 +7,7 @@
 #define AVG_COUNT       10
 
 /// 全局循环缓存，存放每次 5 次采样后的平均值
-volatile uint16_t ADC_recieve0[ADC_RECV_LEN] = {0};
+volatile uint16_t ADC_recieve0[ADC_RECV_LEN] = {0}; 
 volatile uint16_t ADC_recieve1[ADC_RECV_LEN] = {0};
 volatile uint16_t ADC_recieve2 = 0;
 
