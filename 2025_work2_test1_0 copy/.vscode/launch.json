@@ -6,6 +6,24 @@
             "type": "ccs-debug",
             "request": "launch",
             "project": "2025_work2_test1_0"
+        },
+        {
+            "name": "2025_work2_test1_0 copy",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "2025_work2_test1_0 copy",
+                "resourceId": "/2025_work2_test1_0 copy"
+            }
+        },
+        {
+            "name": "RFWBAmpCtrl_MSPM0G3507 copy",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "RFWBAmpCtrl_MSPM0G3507 copy",
+                "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy"
+            }
         }
     ]
 }

@@ -25,5 +25,7 @@ void UI_init(void);
 void UI_taskShow(void);
 void UI_taskBTN(void);
 void UI_taskENC(void);
+void UI(void);
+
 
 #endif /* #ifndef __UI_H__ */
