@@ -27,6 +27,33 @@
                 "name": "RFWBAmpCtrl_MSPM0G3507 copy 1",
                 "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 1"
             }
+        },
+        {
+            "name": "MSPM0G3507_AD9959DDSCtrl_Demo",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "MSPM0G3507_AD9959DDSCtrl_Demo",
+                "resourceId": "/MSPM0G3507_AD9959DDSCtrl_Demo"
+            }
+        },
+        {
+            "name": "RFWBAmpCtrl_MSPM0G3507 copy 3",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "RFWBAmpCtrl_MSPM0G3507 copy 3",
+                "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 3"
+            }
+        },
+        {
+            "name": "test1.0",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "test1.0",
+                "resourceId": "/test1.0"
+            }
         }
     ]
 }

@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "ad9959.h": "c",
+        "ti_msp_dl_config.h": "c",
+        "stdint.h": "c",
+        "usertask.h": "c"
+    },
+    "C_Cpp.default.compilerPath": "cl.exe"
+}

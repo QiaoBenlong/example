@@ -24,7 +24,8 @@
 volatile uint16_t SweepTick = 0;
 loaded_t loaded = Open; //当前工作状态
 char sweep_number = 0;
-float freq = 0;
+// float freq = 0;
+volatile uint16_t UITick = 0;
 
 void get_length(){
     sweep_number = 0 ;
