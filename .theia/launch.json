@@ -54,6 +54,15 @@
                 "name": "test1.0",
                 "resourceId": "/test1.0"
             }
+        },
+        {
+            "name": "RFWBAmpCtrl_MSPM0G3507 copy 4",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "RFWBAmpCtrl_MSPM0G3507 copy 4",
+                "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 4"
+            }
         }
     ]
 }

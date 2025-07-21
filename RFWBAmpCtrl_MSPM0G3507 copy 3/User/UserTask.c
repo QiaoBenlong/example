@@ -8,6 +8,7 @@ volatile uint16_t UIInfoTick = UI_INFO_TIME; // INFO界面显示倒计时
 volatile uint16_t RGBLEDTick = 0;
 volatile uint16_t UARTTick = 0;
 volatile float freq = 1E6F;
+volatile uint16_t amp = 512;
 BTNData_t BTNData = {0};
 char sweep_number = 0;
 int SWFlag = 0;
@@ -132,8 +133,8 @@ void UserTask_init(void) {
 
 
 void UserTask_loop(void) {
-    UserTask_BTN();
- 
+    // UserTask_BTN();
+    initSweepParam();
 
     switch (flag)
     {
@@ -161,6 +162,15 @@ void UserTask_loop(void) {
                 UI_taskShow2();
             }  
             UserTask_ENC();
+                BTN_getData(&BTNData);
+            if(BTNData.up)
+            {
+                amp += 5;
+            }
+            if(BTNData.down)
+            {
+                amp -= 5;
+            }
             initSingleToneParam();
             DDS_singleTone(AD9959_CH1, &SingleTone[1]);
             DDS_singleTone(AD9959_CH2, &SingleTone[2]);
@@ -176,7 +186,7 @@ void initSingleToneParam(void) {
     int i;
     for (i = 0; i < 4; i++) {
         SingleTone[i].freq = freq;
-        SingleTone[i].amp = 1023;  // 幅度最大(1023)
+        SingleTone[i].amp = amp;  // 幅度最大(1023)
     }
     SingleTone[0].phase = 0x0000; // 相位0度(0)
     SingleTone[1].phase = 0x1000; // 相位90度(4096)

@@ -130,11 +130,11 @@ void UART2_IRQHandler(void)
         }
         else if (received_data == 0x16)
         {
-            flag=0;
+            flag=1;
         }
         else if (received_data == 0x17)
         {
-            flag=1;
+            flag=0;
         }
     }
     initSweepParam();

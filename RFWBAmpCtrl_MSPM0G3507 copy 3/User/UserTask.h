@@ -32,6 +32,7 @@ extern volatile uint16_t GainCtrlTick;
 extern volatile uint16_t SweepTick;
 extern volatile float freq;
 extern volatile int flag;
+extern volatile uint16_t amp;
 extern DDS_SweepParam_t Sweep[3];
 
 
