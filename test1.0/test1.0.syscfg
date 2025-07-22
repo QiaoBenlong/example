@@ -1,8 +1,9 @@
 /**
  * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
  * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
- * @cliArgs --device "MSPM0G350X" --package "LQFP-48(PT)" --part "Default" --product "mspm0_sdk@1.30.00.03"
- * @versions {"tool":"1.20.0+3587"}
+ * @cliArgs --device "MSPM0G350X" --part "Default" --package "LQFP-48(PT)" --product "mspm0_sdk@2.01.00.03"
+ * @v2CliArgs --device "MSPM0G3507" --package "LQFP-48(PT)" --product "mspm0_sdk@2.01.00.03"
+ * @versions {"tool":"1.22.0+3893"}
  */
 
 /**
@@ -50,14 +51,14 @@ pinFunction3.peripheral.hfclkInPin.$assign = "PA6";
 ADC121.$name                             = "ADC1";
 ADC121.sampClkSrc                        = "DL_ADC12_CLOCK_HFCLK";
 ADC121.enabledInterrupts                 = ["DL_ADC12_INTERRUPT_MEM0_RESULT_LOADED"];
-ADC121.adcPin0Config.$name               = "ti_driverlib_gpio_GPIOPinGeneric4";
 ADC121.adcPin0Config.hideOutputInversion = scripting.forceWrite(false);
+ADC121.adcPin0Config.$name               = "ti_driverlib_gpio_GPIOPinGeneric4";
 
 ADC122.$name                             = "ADC0";
 ADC122.enabledInterrupts                 = ["DL_ADC12_INTERRUPT_MEM0_RESULT_LOADED"];
 ADC122.sampClkSrc                        = "DL_ADC12_CLOCK_HFCLK";
-ADC122.adcPin0Config.$name               = "ti_driverlib_gpio_GPIOPinGeneric5";
 ADC122.adcPin0Config.hideOutputInversion = scripting.forceWrite(false);
+ADC122.adcPin0Config.$name               = "ti_driverlib_gpio_GPIOPinGeneric5";
 
 const Board                       = scripting.addModule("/ti/driverlib/Board", {}, false);
 Board.peripheral.$assign          = "DEBUGSS";
@@ -149,26 +150,26 @@ UART1.enabledInterrupts                = ["RX"];
 UART1.peripheral.$assign               = "UART2";
 UART1.peripheral.rxPin.$assign         = "PB18";
 UART1.peripheral.txPin.$assign         = "PB17";
-UART1.txPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric0";
 UART1.txPinConfig.direction            = scripting.forceWrite("OUTPUT");
 UART1.txPinConfig.hideOutputInversion  = scripting.forceWrite(false);
 UART1.txPinConfig.onlyInternalResistor = scripting.forceWrite(false);
 UART1.txPinConfig.passedPeripheralType = scripting.forceWrite("Digital");
-UART1.rxPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric1";
+UART1.txPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric0";
 UART1.rxPinConfig.hideOutputInversion  = scripting.forceWrite(false);
 UART1.rxPinConfig.onlyInternalResistor = scripting.forceWrite(false);
 UART1.rxPinConfig.passedPeripheralType = scripting.forceWrite("Digital");
+UART1.rxPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric1";
 
 UART2.$name                            = "UART_0";
-UART2.txPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric2";
 UART2.txPinConfig.direction            = scripting.forceWrite("OUTPUT");
 UART2.txPinConfig.hideOutputInversion  = scripting.forceWrite(false);
 UART2.txPinConfig.onlyInternalResistor = scripting.forceWrite(false);
 UART2.txPinConfig.passedPeripheralType = scripting.forceWrite("Digital");
-UART2.rxPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric3";
+UART2.txPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric2";
 UART2.rxPinConfig.hideOutputInversion  = scripting.forceWrite(false);
 UART2.rxPinConfig.onlyInternalResistor = scripting.forceWrite(false);
 UART2.rxPinConfig.passedPeripheralType = scripting.forceWrite("Digital");
+UART2.rxPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric3";
 
 ProjectConfig.deviceSpin = "MSPM0G3507";
 scripting.suppress("Migrating requires going through the Switch Board or Device menu in the Device View section\\.", ProjectConfig, "deviceSpin");

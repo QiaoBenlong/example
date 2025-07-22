@@ -63,6 +63,28 @@
                 "name": "RFWBAmpCtrl_MSPM0G3507 copy 4",
                 "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 4"
             }
+        },
+        {
+            "name": "adc12_single_conversion_LP_MSPM0G3507_nortos_ticlang",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "adc12_single_conversion_LP_MSPM0G3507_nortos_ticlang",
+                "resourceId": "/adc12_single_conversion_LP_MSPM0G3507_nortos_ticlang"
+            },
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS110 USB Debug Probe",
+                    "cores": [
+                        {
+                            "name": "CORTEX_M0P",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
