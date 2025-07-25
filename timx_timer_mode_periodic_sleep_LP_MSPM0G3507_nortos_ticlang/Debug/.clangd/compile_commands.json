@@ -1,0 +1,7 @@
+[
+   {
+      "directory" : "D:/git/example/timx_timer_mode_periodic_sleep_LP_MSPM0G3507_nortos_ticlang/Debug",
+      "command"   : "clang++ -I\"D:/git/example/timx_timer_mode_periodic_sleep_LP_MSPM0G3507_nortos_ticlang\" -I\"D:/git/example/timx_timer_mode_periodic_sleep_LP_MSPM0G3507_nortos_ticlang/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/include/c\" -xc",
+      "file"      : "D:/git/example/timx_timer_mode_periodic_sleep_LP_MSPM0G3507_nortos_ticlang/timx_timer_mode_periodic_sleep.c"
+   }
+]

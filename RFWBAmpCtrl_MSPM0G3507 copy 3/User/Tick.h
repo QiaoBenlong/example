@@ -8,6 +8,7 @@
 #include "BTN.h"
 
 extern volatile uint32_t Tick;
+#define delay_1_cycle() __asm__ volatile ("nop")
 /**
  * @brief 延时(使用SysTick中断计时)
  * @param t 延时时间(ms)

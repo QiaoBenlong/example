@@ -1,6 +1,11 @@
 #include "Tick.h"
+#include "ti_msp_dl_config.h"
+
 
 volatile uint32_t Tick = 0;
+
+
+
 
 // SysTick中断(1ms)
 void SysTick_Handler(void) {
@@ -8,7 +13,7 @@ void SysTick_Handler(void) {
     UITick++;
     RGBLEDTick++;
     UARTTick++;
-    SweepTick+=10;
+    SweepTick+=2;
 
     if (UIInfoTick) UIInfoTick--;
 

@@ -136,6 +136,7 @@
 
 #include "UserADC.h"
 
+
 // volatile uint16_t ADC0Data = 0;
 // volatile uint16_t ADC1Data = 0;
 // volatile uint8_t ADC0DataValid = 0;
@@ -194,13 +195,39 @@
 
 volatile bool gCheckADC;
 volatile uint16_t gAdcResult;
-volatile float amp_measured;
+volatile float amp_measured1;
+volatile float amp_measured2;
+volatile float amp_dc1;
+volatile float amp_dc2;
 
+
+
+/************jyf**************/
+#define RESULT_SIZE (512)
+#define AVG_COUNT     5
+volatile uint16_t i = 0;
+volatile bool gCheckADC1;
+
+volatile float vol0[RESULT_SIZE];
+volatile float vol1[RESULT_SIZE];
+
+volatile float gAdcResult0[RESULT_SIZE];
+volatile float gAdcResult1[RESULT_SIZE];
+volatile float v0;
+volatile float v1;
+volatile float sum;
+volatile float v_final;
+volatile float AMP_FINAL[RESULT_SIZE];
+volatile int sampleCnt;
+volatile int Cnt = 0;
+volatile float Phase[RESULT_SIZE];
 
 void UserADC_init(void)
 {
     NVIC_EnableIRQ(ADC0_INST_INT_IRQN);
+    NVIC_EnableIRQ(ADC1_INST_INT_IRQN);
     gCheckADC = false;
+    gCheckADC1 = false;
 }
 
 void UserTask_ADC(void)
@@ -209,10 +236,12 @@ void UserTask_ADC(void)
     while(false == gCheckADC){}
     gAdcResult = DL_ADC12_getMemResult(ADC0_INST,DL_ADC12_MEM_IDX_0);
     gCheckADC = false;
-    amp_measured = ADC_VAL_TO_VOLTAGE(gAdcResult);
+    amp_measured1 = ADC_VAL_TO_VOLTAGE(gAdcResult);
     DL_ADC12_enableConversions(ADC0_INST);
 
 }
+
+
 
 void ADC0_INST_IRQHandler(void)
 {
@@ -225,3 +254,78 @@ void ADC0_INST_IRQHandler(void)
     }
 }
 
+
+void UserTask_ADC1(void)
+{
+
+    DL_ADC12_startConversion(ADC1_INST);
+    while(false == gCheckADC1){}//waiting....
+    v0 = DL_ADC12_getMemResult(ADC1_INST,DL_ADC12_MEM_IDX_0);
+    v1 = DL_ADC12_getMemResult(ADC1_INST,DL_ADC12_MEM_IDX_1);
+
+    // vol0[i] = ADC_VAL_TO_VOLTAGE(gAdcResult0[i]);
+    // vol1[i] = ADC_VAL_TO_VOLTAGE(gAdcResult1[i]);
+    amp_measured1 = ADC_VAL_TO_VOLTAGE(v0);
+    amp_measured2 = ADC_VAL_TO_VOLTAGE(v1);
+    amp_dc1 = 1.4106*amp_measured1-3.0108;
+    amp_dc2 = 1.3986*amp_measured2-2.829;
+    v_final = 20 * log10( (2 * sqrt(amp_dc1 * amp_dc1 + amp_dc2 * amp_dc2)) / (1 * 1) )+20;
+    sum += v_final;
+    sampleCnt++;
+    if(sampleCnt >= AVG_COUNT)
+    {
+        AMP_FINAL[Cnt] = sum / (AVG_COUNT);
+        sum = 0;
+        sampleCnt = 0;
+        if(amp_dc1 > 0 && amp_dc2 < 0)
+        {
+            Phase[Cnt] = (float)atan((double)((-amp_dc2)/amp_dc1));
+        }
+        if(amp_dc1 < 0 && amp_dc2 < 0)
+        {
+            Phase[Cnt] = (float)(atan((double)((-amp_dc2)/amp_dc1))+M_PI);
+        }
+        if(amp_dc1 > 0 && amp_dc2 > 0)
+        {
+            Phase[Cnt] = (float)atan((double)((-amp_dc2)/amp_dc1));
+        }
+        if(amp_dc1 < 0 && amp_dc2 > 0)
+        {
+            Phase[Cnt] = (float)(atan((double)((-amp_dc2)/amp_dc1))-M_PI);
+        }
+
+        Cnt++;
+        
+    }
+
+
+
+    if(Cnt>=512)
+    {
+        Cnt = 0;
+    }
+
+    gCheckADC1 = false;
+
+
+
+    // if (i >= RESULT_SIZE) {        
+    //     i = 0;
+    // }
+
+    // else{/*No action required*/}
+    DL_ADC12_enableConversions(ADC1_INST);
+
+
+}
+
+void ADC1_INST_IRQHandler(void)
+{
+    switch (DL_ADC12_getPendingInterrupt(ADC1_INST)) {
+        case DL_ADC12_IIDX_MEM1_RESULT_LOADED:
+            gCheckADC1 = true;
+            break;
+        default:
+            break;
+    }
+}

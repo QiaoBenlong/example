@@ -39,7 +39,8 @@ int main(void)
 {
     SYSCFG_DL_init();
     UserTask_init();
-    while (1) {
+    while (1) 
+    {
         
         UserTask_loop();
     }

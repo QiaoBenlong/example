@@ -1,0 +1,567 @@
+[
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Base/BASE.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Base/UART.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/LCD/LCD.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/FFT.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/measure.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/filter/msp_biquad_cascade_df1_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/filter/msp_biquad_cascade_df2_ext_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/filter/msp_biquad_cascade_df2_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/filter/msp_biquad_df1_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/filter/msp_biquad_df2_ext_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/filter/msp_biquad_df2_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/filter/msp_cmplx_fir_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/filter/msp_cmplx_fir_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/filter/msp_fir_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/filter/msp_fir_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/lea/msp_lea_flags.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/lea/msp_lea_init.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/lea/msp_lea_isr.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/lea/msp_lea_patch.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_abs_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_abs_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_add_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_add_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_mpy_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_mpy_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_neg_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_neg_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_offset_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_offset_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_scale_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_scale_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_shift_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_shift_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_sub_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_sub_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_trans_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/matrix/msp_matrix_trans_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_cmplx_bitrev_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_cmplx_bitrev_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_cmplx_fft_auto_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_cmplx_fft_fixed_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_cmplx_fft_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_cmplx_ifft_auto_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_cmplx_ifft_fixed_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_cmplx_ifft_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_fft_auto_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_fft_fixed_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_fft_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_ifft_auto_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_ifft_fixed_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_ifft_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_split_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_split_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/transform/msp_transform_tables.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_cmplx_fill_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_cmplx_fill_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_cmplx_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_cmplx_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_copy_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_copy_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_deinterleave_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_deinterleave_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_fill_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_fill_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_interleave_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_interleave_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_iq31_to_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_q15_to_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/utility/msp_sinusoid_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_abs_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_abs_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_add_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_add_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_add_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_add_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_conj_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_conj_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_mac_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_mac_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_mpy_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_mpy_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_mpy_real_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_mpy_real_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_scale_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_scale_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_shift_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_shift_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_sub_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_cmplx_sub_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_mac_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_mac_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_max_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_max_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_max_uq15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_max_uq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_min_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_min_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_min_uq15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_min_uq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_mpy_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_mpy_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_neg_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_neg_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_offset_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_offset_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_scale_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_scale_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_shift_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_shift_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_sub_iq31.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Measure/source/vector/msp_sub_q15.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/Menu/menu.c"
+   },
+   {
+      "directory" : "D:/git/example/05.The_Finals_4/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"D:/git/example/05.The_Finals_4/Base\" -I\"D:/git/example/05.The_Finals_4/Measure/include\" -I\"D:/git/example/05.The_Finals_4/Measure/source\" -I\"D:/git/example/05.The_Finals_4/LCD\" -I\"D:/git/example/05.The_Finals_4/Measure\" -I\"D:/git/example/05.The_Finals_4/Menu\" -I\"D:/git/example/05.The_Finals_4\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2553__ -xc",
+      "file"      : "D:/git/example/05.The_Finals_4/main.c"
+   }
+]

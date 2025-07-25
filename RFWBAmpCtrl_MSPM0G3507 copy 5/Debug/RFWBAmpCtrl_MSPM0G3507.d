@@ -74,16 +74,16 @@ RFWBAmpCtrl_MSPM0G3507.o: ../RFWBAmpCtrl_MSPM0G3507.c \
  C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/dl_wwdt.h \
  C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/m0p/dl_interrupt.h \
  C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/m0p/dl_systick.h \
- D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/UserTask.h \
- D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/Tick.h \
- D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/Encoder.h \
- D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/BTN.h \
- D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/UI.h \
- D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/UserUART.h \
- D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/RGBLED.h \
- D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/UserADC.h \
- D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/DDS.h \
- D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/AD9959.h
+ D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/UserTask.h \
+ D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/Tick.h \
+ D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/Encoder.h \
+ D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/BTN.h \
+ D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/UI.h \
+ D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/UserUART.h \
+ D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/RGBLED.h \
+ D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/UserADC.h \
+ D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/DDS.h \
+ D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/AD9959.h
 syscfg/ti_msp_dl_config.h:
 C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/msp/msp.h:
 C:/ti/mspm0_sdk_2_01_00_03/source/ti/devices/DeviceFamily.h:
@@ -157,13 +157,13 @@ C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/dl_vref.h:
 C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/dl_wwdt.h:
 C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/m0p/dl_interrupt.h:
 C:/ti/mspm0_sdk_2_01_00_03/source/ti/driverlib/m0p/dl_systick.h:
-D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/UserTask.h:
-D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/Tick.h:
-D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/Encoder.h:
-D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/BTN.h:
-D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/UI.h:
-D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/UserUART.h:
-D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/RGBLED.h:
-D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/UserADC.h:
-D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/DDS.h:
-D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 3/User/AD9959.h:
+D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/UserTask.h:
+D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/Tick.h:
+D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/Encoder.h:
+D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/BTN.h:
+D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/UI.h:
+D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/UserUART.h:
+D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/RGBLED.h:
+D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/UserADC.h:
+D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/DDS.h:
+D:/git/example/RFWBAmpCtrl_MSPM0G3507\ copy\ 5/User/AD9959.h:

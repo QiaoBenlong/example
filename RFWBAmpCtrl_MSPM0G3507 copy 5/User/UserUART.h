@@ -30,8 +30,9 @@ extern corrent_operating_t corrent_operating;//trans
 extern volatile float  freq_start;
 extern volatile float  freq_end;
 extern volatile float freq_step;
-
-
+extern volatile int print_flag;
+extern volatile int order_flag;
+extern volatile int start_flag;
 
 void UART2_init();
 int UART0_sendStr(const char* str);

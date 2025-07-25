@@ -30,6 +30,7 @@ extern corrent_operating_t corrent_operating;//trans
 extern volatile float  freq_start;
 extern volatile float  freq_end;
 extern volatile float freq_step;
+extern volatile int pause_flag;
 
 
 

@@ -1,6 +1,8 @@
 #include "UserTask.h"
 #include <sys/cdefs.h>
 #include "Encoder.h"
+
+
 //test
 // volatile uint16_t SweepTick = 0; //trans
 volatile uint16_t UITick = 0;
@@ -105,8 +107,11 @@ volatile uint16_t inADCVal, outADCVal =0;//初始ADC取值
 DDS_SingleToneParam_t SingleTone[4] = {0};
 DDS_SweepParam_t Sweep[3] = {0};
 
-volatile int flag=0;
+volatile int flag = 1;
 volatile uint16_t SweepTick = 0;
+volatile int toggle_flag = 0;
+volatile float Volt1 = 0;
+volatile float Volt2 = 0;
 
 void UserTask_init(void) {
     initSingleToneParam();
@@ -116,6 +121,9 @@ void UserTask_init(void) {
     DDS_init();
     UART2_init();
     UserADC_init();
+    NVIC_EnableIRQ(TIMER_0_INST_INT_IRQN);
+    NVIC_EnableIRQ(TIMER_1_INST_INT_IRQN);
+    
     // UI_init();
 
     // DDS_singleTone(AD9959_CH0, &SingleTone[0]);
@@ -126,9 +134,9 @@ void UserTask_init(void) {
 
     // Tick_delay(3000);
 
-    DDS_initSweep(AD9959_CH1, &Sweep[0]);
-    DDS_initSweep(AD9959_CH2, &Sweep[1]);
-    DDS_initSweep(AD9959_CH3, &Sweep[2]);
+    DDS_initSweep(AD9959_CH0, &Sweep[0]);
+    DDS_initSweep(AD9959_CH1, &Sweep[1]);
+    // DDS_initSweep(AD9959_CH3, &Sweep[2]);
     DDS_update();
 }
 
@@ -138,7 +146,7 @@ void UserTask_loop(void) {
     // UserTask_BTN();
     initSweepParam();
     UserTask_ADC();
-    
+    UserTask_ADC1();
     // UserADC0_start();
     // inADCVal = UserADC0_getData(50);
 
@@ -155,9 +163,9 @@ void UserTask_loop(void) {
                 
                 SweepTick = 0;
                 // initSweepParam();
-                DDS_sweep(AD9959_CH1, &Sweep[0]);
-                DDS_sweep(AD9959_CH2, &Sweep[1]);
-                DDS_sweep(AD9959_CH3, &Sweep[2]);
+                DDS_sweep(AD9959_CH0, &Sweep[0]);
+                DDS_sweep(AD9959_CH1, &Sweep[1]);
+                // DDS_sweep(AD9959_CH3, &Sweep[2]);
                 DDS_update();
             }
             break;
@@ -166,21 +174,72 @@ void UserTask_loop(void) {
             {
                 UITick = 0;
                 UI_taskShow2();
-            }  
+            }
+            freq = 4E6F;
             UserTask_ENC();
-                BTN_getData(&BTNData);
-            if(BTNData.up)
+            // BTN_getData(&BTNData);
+            // if(BTNData.up)
+            // {
+            //     amp += 5;
+            // }
+            // if(BTNData.down)
+            // {
+            //     amp -= 5;
+            // }
+            if (toggle_flag == 0)
             {
-                amp += 5;
+                Volt1 = amp_measured;//按下前的电压
             }
-            if(BTNData.down)
+            else if (toggle_flag == 1)
             {
-                amp -= 5;
+                Volt2 = amp_measured;//按下后的电压               
             }
+            
+            // if(BTNData.mid)
+            // {
+            //     DL_GPIO_togglePins(GPIO_RELAY_PORT,GPIO_RELAY_relay1_PIN);
+            //     toggle_flag = !toggle_flag; //toggle_flag为0时是按下前，为1是按下后
+            // }
+            
             initSingleToneParam();
+            // DDS_singleTone(AD9959_CH0, &SingleTone[0]);
             DDS_singleTone(AD9959_CH1, &SingleTone[1]);
-            DDS_singleTone(AD9959_CH2, &SingleTone[2]);
             DDS_update();
+            if(print_flag == 1)
+            {
+                DL_GPIO_setPins(GPIO_RELAY_PORT,GPIO_RELAY_relay1_PIN);
+                toggle_flag = !toggle_flag; //toggle_flag为0时是按下前，为1是按下后
+                UART2_printf("home.t8.txt=\"loading\"\xff\xff\xff");
+                
+                DL_TimerG_startCounter(TIMER_0_INST);
+                
+
+            }
+            if(print_flag == 2)
+            {
+                // DL_TimerG_startCounter(TIMER_1_INST);
+                if(Volt2 >= 2.1)
+                {
+                    UART2_printf("home.t8.txt=\"SFTP\"\xff\xff\xff");                    
+                }
+                else if(Volt2>=1.7 && (Volt2-Volt1)>=0.5)
+                {
+                    UART2_printf("home.t8.txt=\"SFTP\"\xff\xff\xff");
+                }
+                else if((Volt2 - Volt1)>=0.2 && Volt2<=1.9)
+                {
+                    UART2_printf("home.t8.txt=\"FTP\"\xff\xff\xff");
+                }
+                else if((Volt2-Volt1)<=0.15)
+                {
+                    UART2_printf("home.t8.txt=\"UTP\"\xff\xff\xff");
+                }
+                else 
+                {
+                    UART2_printf("home.t8.txt=\"loading\"\xff\xff\xff");
+                }
+            }
+
             break;
         case 2:
             if (UITick >= UI_TIME) 
@@ -188,6 +247,42 @@ void UserTask_loop(void) {
                 UITick = 0;
                 UI_taskShow3();
             }  
+            freq = 5E6F;
+            initSingleToneParam();
+            // DDS_singleTone(AD9959_CH0, &SingleTone[0]);
+            DDS_singleTone(AD9959_CH1, &SingleTone[1]);
+            DDS_update();
+            if(start_flag == 1)
+            {
+                if(v1 >= 0.85)
+                {
+                    order_flag = 1;
+                }
+                else if(v1 < 0.85)
+                {
+                    order_flag = 2;
+                }
+                start_flag = 0;
+            }
+                if(order_flag == 0)
+                {
+                    UART2_printf("order.p3.aph=0\xff\xff\xff");
+                    UART2_printf("order.p4.aph=0\xff\xff\xff");
+                }
+                if(order_flag == 1)
+                {
+                    UART2_printf("order.p3.aph=127\xff\xff\xff");
+                    UART2_printf("order.p4.aph=0\xff\xff\xff");
+                }
+                if(order_flag == 2)
+                {
+                    UART2_printf("order.p3.aph=0\xff\xff\xff");
+                    UART2_printf("order.p4.aph=127\xff\xff\xff");
+                }
+
+
+
+
             break;
         default:
             break;
@@ -196,13 +291,15 @@ void UserTask_loop(void) {
 }
 
 void initSingleToneParam(void) {
-    int i;
-    for (i = 0; i < 4; i++) {
-        SingleTone[i].freq = freq;
-        SingleTone[i].amp = 1023;  // 幅度最大(1023)
-    }
+    // int i;
+    // for (i = 0; i < 4; i++) {
+    SingleTone[0].freq = freq;
+    SingleTone[0].amp = 1023;  // 幅度最大(1023)
+    // }
+    SingleTone[1].freq = freq;
+    SingleTone[1].amp = 1023;  // 幅度最大(1023)
     SingleTone[0].phase = 0x0000; // 相位0度(0)
-    SingleTone[1].phase = 0x1000; // 相位90度(4096)
+    SingleTone[1].phase = 0x2000; // 相位180度(8192)
     SingleTone[2].phase = 0x2000; // 相位180度(8192)
     SingleTone[3].phase = 0x3000; // 相位270度(12288)
 }
@@ -223,9 +320,9 @@ void initSweepParam(void) {
 
     // CH2:1MHz ~ 40MHz 线性扫频   
     Sweep[1].amp = 1023;                // 幅度最大(1023)
-    Sweep[1].phase = 4096;                 // 相位90度(4096)
-    Sweep[1].start = freq_start*1000000;              // 起始频率1kHz
-    Sweep[1].step = freq_step*1000000;                // 步进频率100Hz
+    Sweep[1].phase = 8192;                 // 相位180度(8192)
+    Sweep[1].start = freq_start*1000000;              // 起始频率
+    Sweep[1].step = freq_step*1000000;                // 步进频率
     Sweep[1].end = freq_end*1000000;              // 终止频率100kHz
     Sweep[1].type = DDS_SWEEP_FREQ;     // 扫频
     Sweep[1].method = DDS_SWEEP_LINEAR; // 线性扫描
@@ -311,3 +408,33 @@ void UserTask_ENC(void)
 
 
 }
+
+
+void TIMER_0_INST_IRQHandler(void)
+{
+    switch (DL_TimerG_getPendingInterrupt(TIMER_0_INST)) {
+        case DL_TIMER_IIDX_ZERO:
+        
+            DL_GPIO_clearPins(GPIO_RELAY_PORT,GPIO_RELAY_relay1_PIN);
+            toggle_flag = !toggle_flag;
+            print_flag = 2;
+
+            break;
+        default:
+            break;
+    }
+}
+
+// void TIMER_1_INST_IRQHandler(void)
+// {
+//     switch (DL_TimerG_getPendingInterrupt(TIMER_1_INST)) {
+//         case DL_TIMER_IIDX_ZERO:
+        
+//             Tick_delay(10);
+
+//             break;
+//         default:
+//             break;
+//     }
+// }
+

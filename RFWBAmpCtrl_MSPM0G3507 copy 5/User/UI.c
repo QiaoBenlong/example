@@ -22,15 +22,26 @@ void UI_taskShow1(void){
 
 void UI_taskShow2(void)
 {
-    UART2_printf("data.t1.txt=\"%.1f\"\xff\xff\xff",freq/1000000);
-
+    UART2_printf("home.t5.txt=\"%.1f\"\xff\xff\xff",freq/1000000);    
+    UART2_printf("home.t9.txt=\"%.4f\"\xff\xff\xff",Volt1);
+    UART2_printf("home.t10.txt=\"%.4f\"\xff\xff\xff",Volt2);
+    UART2_printf("home.t11.txt=\"%.4f\"\xff\xff\xff",amp_measured);
 }
 
 void UI_taskShow3(void)
 {
-    UART2_printf("amp_measure.t0.txt=\"%.4f\"\xff\xff\xff",amp_measured);
+    UART2_printf("order.t16.txt=\"%.4f\"\xff\xff\xff",v1);
+
+
+
 
 }
+// void UI_taskShow3(void)
+// {
+//     UART2_printf("home.t6.txt=\"%.1f\"\xff\xff\xff",freq/1000000);
+    
+
+// }
 
 
 void UI_taskBTN(void) {

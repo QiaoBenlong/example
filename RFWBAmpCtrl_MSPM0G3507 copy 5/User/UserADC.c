@@ -192,15 +192,27 @@
 //     }
 // }
 
+#define RESULT_SIZE (512)
+#define AVG_COUNT     5
 volatile bool gCheckADC;
+volatile bool gCheckADC1;
 volatile uint16_t gAdcResult;
+volatile uint16_t gAdcResult1;
+volatile uint16_t gAdcResult2;
 volatile float amp_measured;
-
+volatile float Vol_temp;
+volatile int sampleCnt = 0;
+volatile int Cnt = 0;
+volatile float sum = 0;
+volatile float v1 = 0;
+volatile float v2 = 0;
 
 void UserADC_init(void)
 {
     NVIC_EnableIRQ(ADC0_INST_INT_IRQN);
+    NVIC_EnableIRQ(ADC1_INST_INT_IRQN);
     gCheckADC = false;
+    gCheckADC1 = false;
 }
 
 void UserTask_ADC(void)
@@ -208,11 +220,38 @@ void UserTask_ADC(void)
     DL_ADC12_startConversion(ADC0_INST);
     while(false == gCheckADC){}
     gAdcResult = DL_ADC12_getMemResult(ADC0_INST,DL_ADC12_MEM_IDX_0);
-    gCheckADC = false;
     amp_measured = ADC_VAL_TO_VOLTAGE(gAdcResult);
+    sum += amp_measured;
+    sampleCnt++;
+    if(sampleCnt >= AVG_COUNT)
+    {
+        Vol_temp = sum / (AVG_COUNT);
+        sum = 0;
+        sampleCnt = 0;
+        // Cnt++;
+    }
+    // if(Cnt >= RESULT_SIZE)
+    // {
+    //     Cnt = 0;
+    // }
+    gCheckADC = false;
     DL_ADC12_enableConversions(ADC0_INST);
 
 }
+
+void UserTask_ADC1(void)
+{
+
+    DL_ADC12_startConversion(ADC1_INST);
+    while(false == gCheckADC1){}//waiting....
+    gAdcResult1 = DL_ADC12_getMemResult(ADC1_INST,DL_ADC12_MEM_IDX_0);
+    gAdcResult2 = DL_ADC12_getMemResult(ADC1_INST,DL_ADC12_MEM_IDX_1);
+    v1 = ADC_VAL_TO_VOLTAGE(gAdcResult1);
+    v2 = ADC_VAL_TO_VOLTAGE(gAdcResult2);
+    gCheckADC1 = false;
+    DL_ADC12_enableConversions(ADC1_INST);
+}
+
 
 void ADC0_INST_IRQHandler(void)
 {
@@ -225,3 +264,13 @@ void ADC0_INST_IRQHandler(void)
     }
 }
 
+void ADC1_INST_IRQHandler(void)
+{
+    switch (DL_ADC12_getPendingInterrupt(ADC1_INST)) {
+        case DL_ADC12_IIDX_MEM1_RESULT_LOADED:
+            gCheckADC1 = true;
+            break;
+        default:
+            break;
+    }
+}

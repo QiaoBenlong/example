@@ -42,11 +42,17 @@ void UserADC_init(void);
 void UserTask_ADC(void);
 
 extern volatile bool gCheckADC;
+extern volatile bool gCheckADC1;
 extern volatile uint16_t gAdcResult;
 extern volatile float amp_measured;
-
-
-
+extern volatile float Vol_temp;
+extern volatile int sampleCnt;
+extern volatile int Cnt;
+extern volatile float sum;
+extern volatile float v1;
+extern volatile float v2;
+extern volatile uint16_t gAdcResult1;
+extern volatile uint16_t gAdcResult2;
 
 // void UserADC_init(void);
 // void UserADC0_start(void);

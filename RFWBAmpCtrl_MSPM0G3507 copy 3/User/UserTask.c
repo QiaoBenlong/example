@@ -8,11 +8,11 @@ volatile uint16_t UIInfoTick = UI_INFO_TIME; // INFO界面显示倒计时
 volatile uint16_t RGBLEDTick = 0;
 volatile uint16_t UARTTick = 0;
 volatile float freq = 1E6F;
-volatile uint16_t amp = 512;
+volatile uint16_t amp = 1024;
 BTNData_t BTNData = {0};
 char sweep_number = 0;
 int SWFlag = 0;
-
+volatile int fA_flag = 0;
 
 
 
@@ -126,9 +126,8 @@ void UserTask_init(void) {
 
     // Tick_delay(3000);
 
-    DDS_initSweep(AD9959_CH1, &Sweep[0]);
-    DDS_initSweep(AD9959_CH2, &Sweep[1]);
-    DDS_initSweep(AD9959_CH3, &Sweep[2]);
+    DDS_initSweep(AD9959_CH0, &Sweep[0]);
+    DDS_initSweep(AD9959_CH1, &Sweep[1]);
     DDS_update();
 }
 
@@ -136,50 +135,60 @@ void UserTask_init(void) {
 
 void UserTask_loop(void) {
     // UserTask_BTN();
+    
     initSweepParam();
     UserTask_ADC();
     
+    
+    // delay_1_cycle();
     // UserADC0_start();
     // inADCVal = UserADC0_getData(50);
 
     switch (flag)
     {
         case 0:
-            if (UITick >= UI_TIME) 
+            if (UITick >= 500) 
                 {
                     UITick = 0;
                     UI_taskShow1();
+                    
                 }  
             if (SweepTick >= DDS_SWEEP_TIME )  //(uint8_t)((2000*freq_step)/(freq_end-freq_start))
             {
-                
-                SweepTick = 0;
-                // initSweepParam();
-                DDS_sweep(AD9959_CH1, &Sweep[0]);
-                DDS_sweep(AD9959_CH2, &Sweep[1]);
-                DDS_sweep(AD9959_CH3, &Sweep[2]);
-                DDS_update();
+
+                    UserTask_ADC1();
+                    SweepTick = 0;
+                    // initSweepParam();
+                    DDS_sweep(AD9959_CH0, &Sweep[0]);
+                    DDS_sweep(AD9959_CH1, &Sweep[1]);
+                    DDS_update();
+            
             }
+
             break;
         case 1:
-            if (UITick >= UI_TIME) 
+            if (UITick >= 100) 
             {
                 UITick = 0;
                 UI_taskShow2();
             }  
             UserTask_ENC();
-                BTN_getData(&BTNData);
+            BTN_getData(&BTNData);
             if(BTNData.up)
             {
-                amp += 5;
+                fA_flag = 0;
             }
             if(BTNData.down)
             {
-                amp -= 5;
+                fA_flag = 1;
+            }
+            if(BTNData.mid)
+            {
+                DL_GPIO_togglePins(GPIO_RELAY_PORT,GPIO_RELAY_relay1_PIN);
             }
             initSingleToneParam();
+            DDS_singleTone(AD9959_CH0, &SingleTone[0]);
             DDS_singleTone(AD9959_CH1, &SingleTone[1]);
-            DDS_singleTone(AD9959_CH2, &SingleTone[2]);
             DDS_update();
             break;
         case 2:
@@ -187,6 +196,31 @@ void UserTask_loop(void) {
             {
                 UITick = 0;
                 UI_taskShow3();
+            }  
+            break;
+        case 3:
+            if (pause_flag == 1)
+            {
+                if (UITick >= 500) 
+                {
+                    UITick = 0;
+                } 
+            }
+            else
+            {
+                if (UITick >= 500) 
+                {
+                    UITick = 0;
+                    UI_taskShow4();
+                } 
+                
+            } 
+            break;
+        case 4:
+            if (UITick >= UI_TIME) 
+            {
+                UITick = 0;
+                UI_taskShow5();
             }  
             break;
         default:
@@ -199,7 +233,7 @@ void initSingleToneParam(void) {
     int i;
     for (i = 0; i < 4; i++) {
         SingleTone[i].freq = freq;
-        SingleTone[i].amp = 1023;  // 幅度最大(1023)
+        SingleTone[i].amp = amp;  // 幅度最大(1023)
     }
     SingleTone[0].phase = 0x0000; // 相位0度(0)
     SingleTone[1].phase = 0x1000; // 相位90度(4096)
@@ -299,10 +333,24 @@ void UserTask_ENC(void)
     switch (SWFlag)
     {
         case 0:
-            freq += (float)ENC_getIncVal() * 1E6F;
+            if(fA_flag == 0)
+            {
+                freq += (float)ENC_getIncVal() * 1E6F;
+            }
+            if(fA_flag == 1)
+            {
+                amp+= (float)ENC_getIncVal() * 50;
+            }
         break;
         case 1:
-            freq += (float)ENC_getIncVal() * 1E5F;
+            if(fA_flag == 0)
+            {
+                freq += (float)ENC_getIncVal() * 1E5F;
+            }
+            if(fA_flag == 1)
+            {
+                amp+= (float)ENC_getIncVal() * 5;
+            }
         break;
         default:
         break;

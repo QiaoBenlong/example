@@ -33,6 +33,9 @@ extern volatile uint16_t SweepTick;
 extern volatile float freq;
 extern volatile int flag;
 extern volatile uint16_t amp;
+extern volatile int toggle_flag;
+extern volatile float Volt1;
+extern volatile float Volt2;
 extern DDS_SweepParam_t Sweep[3];
 
 

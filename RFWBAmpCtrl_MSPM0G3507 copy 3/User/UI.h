@@ -25,6 +25,7 @@ void UI_init(void);
 void UI_taskShow1(void);
 void UI_taskShow2(void);
 void UI_taskShow3(void);
+void UI_taskShow4(void);
 void UI_taskBTN(void);
 void UI_taskENC(void);
 

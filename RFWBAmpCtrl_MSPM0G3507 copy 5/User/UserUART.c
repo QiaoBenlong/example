@@ -16,6 +16,9 @@ volatile float data_of_test = 0;            // 用于传输数据的数字
 volatile float freq_start = 0;
 volatile float freq_end = 0;
 volatile float freq_step = 0;
+volatile int print_flag = 0;
+volatile int order_flag = 0;
+volatile int start_flag = 0;
 
 corrent_operating_t corrent_operating = initial; //当前工作状态
 
@@ -126,7 +129,10 @@ void UART2_IRQHandler(void)
         {
             //设置步进值
             freq_step = data_of_test;
-
+        }
+        else if (received_data == 0x18)
+        {
+            print_flag = 1;            
         }
         else if (received_data == 0x16)
         {
@@ -136,10 +142,20 @@ void UART2_IRQHandler(void)
         {
             flag=0;
         }
-        else if (received_data == 0x18)
+        else if (received_data == 0x19)
         {
             flag=2;
         }
+        else if (received_data == 0x20)
+        {
+            start_flag=1;
+        }
+
+
+        // else if (received_data == 0x18)
+        // {
+        //     flag=2;
+        // }
     }
     initSweepParam();
 }

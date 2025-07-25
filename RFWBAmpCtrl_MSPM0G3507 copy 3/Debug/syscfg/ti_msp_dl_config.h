@@ -166,8 +166,13 @@ extern "C" {
 #define ADC1_ADCMEM_0                                         DL_ADC12_MEM_IDX_0
 #define ADC1_ADCMEM_0_REF                        DL_ADC12_REFERENCE_VOLTAGE_VDDA
 #define ADC1_ADCMEM_0_REF_VOLTAGE_V                                          3.3
+#define ADC1_ADCMEM_1                                         DL_ADC12_MEM_IDX_1
+#define ADC1_ADCMEM_1_REF                        DL_ADC12_REFERENCE_VOLTAGE_VDDA
+#define ADC1_ADCMEM_1_REF_VOLTAGE_V                                          3.3
 #define GPIO_ADC1_C0_PORT                                                  GPIOA
 #define GPIO_ADC1_C0_PIN                                          DL_GPIO_PIN_15
+#define GPIO_ADC1_C1_PORT                                                  GPIOA
+#define GPIO_ADC1_C1_PIN                                          DL_GPIO_PIN_16
 
 /* Defines for ADC0 */
 #define ADC0_INST                                                           ADC0
@@ -181,6 +186,12 @@ extern "C" {
 
 
 
+/* Port definition for Pin Group GPIO_RELAY */
+#define GPIO_RELAY_PORT                                                  (GPIOA)
+
+/* Defines for relay1: GPIOA.22 with pinCMx 47 on package pin 40 */
+#define GPIO_RELAY_relay1_PIN                                   (DL_GPIO_PIN_22)
+#define GPIO_RELAY_relay1_IOMUX                                  (IOMUX_PINCM47)
 /* Port definition for Pin Group GPIO_BTN */
 #define GPIO_BTN_PORT                                                    (GPIOB)
 

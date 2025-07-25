@@ -42,6 +42,8 @@
 
 DL_TimerG_backupConfig gPWM_LED_RGBackup;
 DL_TimerG_backupConfig gPWM_GAINBackup;
+DL_TimerA_backupConfig gTIMER_0Backup;
+DL_TimerA_backupConfig gTIMER_1Backup;
 
 /*
  *  ======== SYSCFG_DL_init ========
@@ -56,6 +58,8 @@ SYSCONFIG_WEAK void SYSCFG_DL_init(void)
     SYSCFG_DL_PWM_LED_RG_init();
     SYSCFG_DL_PWM_LED_B_init();
     SYSCFG_DL_PWM_GAIN_init();
+    SYSCFG_DL_TIMER_0_init();
+    SYSCFG_DL_TIMER_1_init();
     SYSCFG_DL_UART_0_init();
     SYSCFG_DL_UART_2_init();
     SYSCFG_DL_ADC1_init();
@@ -64,6 +68,8 @@ SYSCONFIG_WEAK void SYSCFG_DL_init(void)
     /* Ensure backup structures have no valid state */
 	gPWM_LED_RGBackup.backupRdy 	= false;
 	gPWM_GAINBackup.backupRdy 	= false;
+	gTIMER_0Backup.backupRdy 	= false;
+	gTIMER_1Backup.backupRdy 	= false;
 
 
 }
@@ -77,6 +83,8 @@ SYSCONFIG_WEAK bool SYSCFG_DL_saveConfiguration(void)
 
 	retStatus &= DL_TimerG_saveConfiguration(PWM_LED_RG_INST, &gPWM_LED_RGBackup);
 	retStatus &= DL_TimerG_saveConfiguration(PWM_GAIN_INST, &gPWM_GAINBackup);
+	retStatus &= DL_TimerA_saveConfiguration(TIMER_0_INST, &gTIMER_0Backup);
+	retStatus &= DL_TimerA_saveConfiguration(TIMER_1_INST, &gTIMER_1Backup);
 
     return retStatus;
 }
@@ -88,6 +96,8 @@ SYSCONFIG_WEAK bool SYSCFG_DL_restoreConfiguration(void)
 
 	retStatus &= DL_TimerG_restoreConfiguration(PWM_LED_RG_INST, &gPWM_LED_RGBackup, false);
 	retStatus &= DL_TimerG_restoreConfiguration(PWM_GAIN_INST, &gPWM_GAINBackup, false);
+	retStatus &= DL_TimerA_restoreConfiguration(TIMER_0_INST, &gTIMER_0Backup, false);
+	retStatus &= DL_TimerA_restoreConfiguration(TIMER_1_INST, &gTIMER_1Backup, false);
 
     return retStatus;
 }
@@ -99,6 +109,8 @@ SYSCONFIG_WEAK void SYSCFG_DL_initPower(void)
     DL_TimerG_reset(PWM_LED_RG_INST);
     DL_TimerG_reset(PWM_LED_B_INST);
     DL_TimerG_reset(PWM_GAIN_INST);
+    DL_TimerA_reset(TIMER_0_INST);
+    DL_TimerA_reset(TIMER_1_INST);
     DL_UART_Main_reset(UART_0_INST);
     DL_UART_Main_reset(UART_2_INST);
     DL_ADC12_reset(ADC1_INST);
@@ -110,6 +122,8 @@ SYSCONFIG_WEAK void SYSCFG_DL_initPower(void)
     DL_TimerG_enablePower(PWM_LED_RG_INST);
     DL_TimerG_enablePower(PWM_LED_B_INST);
     DL_TimerG_enablePower(PWM_GAIN_INST);
+    DL_TimerA_enablePower(TIMER_0_INST);
+    DL_TimerA_enablePower(TIMER_1_INST);
     DL_UART_Main_enablePower(UART_0_INST);
     DL_UART_Main_enablePower(UART_2_INST);
     DL_ADC12_enablePower(ADC1_INST);
@@ -140,6 +154,8 @@ SYSCONFIG_WEAK void SYSCFG_DL_GPIO_init(void)
         GPIO_UART_2_IOMUX_TX, GPIO_UART_2_IOMUX_TX_FUNC);
     DL_GPIO_initPeripheralInputFunction(
         GPIO_UART_2_IOMUX_RX, GPIO_UART_2_IOMUX_RX_FUNC);
+
+    DL_GPIO_initDigitalOutput(GPIO_RELAY_relay1_IOMUX);
 
     DL_GPIO_initDigitalInputFeatures(GPIO_BTN_LEFT_IOMUX,
 		 DL_GPIO_INVERSION_DISABLE, DL_GPIO_RESISTOR_PULL_UP,
@@ -179,10 +195,12 @@ SYSCONFIG_WEAK void SYSCFG_DL_GPIO_init(void)
 
     DL_GPIO_initDigitalOutput(GPIO_DDS_DDS_RST_IOMUX);
 
-    DL_GPIO_clearPins(GPIOA, GPIO_DDS_DDS_SCLK_PIN |
+    DL_GPIO_clearPins(GPIOA, GPIO_RELAY_relay1_PIN |
+		GPIO_DDS_DDS_SCLK_PIN |
 		GPIO_DDS_DDS_UPDATE_PIN |
 		GPIO_DDS_DDS_RST_PIN);
-    DL_GPIO_enableOutput(GPIOA, GPIO_DDS_DDS_SCLK_PIN |
+    DL_GPIO_enableOutput(GPIOA, GPIO_RELAY_relay1_PIN |
+		GPIO_DDS_DDS_SCLK_PIN |
 		GPIO_DDS_DDS_UPDATE_PIN |
 		GPIO_DDS_DDS_RST_PIN);
     DL_GPIO_clearPins(GPIOB, GPIO_DDS_DDS_SDIO0_PIN |
@@ -356,6 +374,82 @@ SYSCONFIG_WEAK void SYSCFG_DL_PWM_GAIN_init(void) {
 
 
 
+/*
+ * Timer clock configuration to be sourced by BUSCLK /  (10000000 Hz)
+ * timerClkFreq = (timerClkSrc / (timerClkDivRatio * (timerClkPrescale + 1)))
+ *   39062.5 Hz = 10000000 Hz / (8 * (255 + 1))
+ */
+static const DL_TimerA_ClockConfig gTIMER_0ClockConfig = {
+    .clockSel    = DL_TIMER_CLOCK_BUSCLK,
+    .divideRatio = DL_TIMER_CLOCK_DIVIDE_8,
+    .prescale    = 255U,
+};
+
+/*
+ * Timer load value (where the counter starts from) is calculated as (timerPeriod * timerClockFreq) - 1
+ * TIMER_0_INST_LOAD_VALUE = (1500 ms * 39062.5 Hz) - 1
+ */
+static const DL_TimerA_TimerConfig gTIMER_0TimerConfig = {
+    .period     = TIMER_0_INST_LOAD_VALUE,
+    .timerMode  = DL_TIMER_TIMER_MODE_ONE_SHOT,
+    .startTimer = DL_TIMER_STOP,
+};
+
+SYSCONFIG_WEAK void SYSCFG_DL_TIMER_0_init(void) {
+
+    DL_TimerA_setClockConfig(TIMER_0_INST,
+        (DL_TimerA_ClockConfig *) &gTIMER_0ClockConfig);
+
+    DL_TimerA_initTimerMode(TIMER_0_INST,
+        (DL_TimerA_TimerConfig *) &gTIMER_0TimerConfig);
+    DL_TimerA_enableInterrupt(TIMER_0_INST , DL_TIMERA_INTERRUPT_ZERO_EVENT);
+    DL_TimerA_enableClock(TIMER_0_INST);
+
+
+
+
+
+}
+
+/*
+ * Timer clock configuration to be sourced by BUSCLK /  (10000000 Hz)
+ * timerClkFreq = (timerClkSrc / (timerClkDivRatio * (timerClkPrescale + 1)))
+ *   39062.5 Hz = 10000000 Hz / (8 * (255 + 1))
+ */
+static const DL_TimerA_ClockConfig gTIMER_1ClockConfig = {
+    .clockSel    = DL_TIMER_CLOCK_BUSCLK,
+    .divideRatio = DL_TIMER_CLOCK_DIVIDE_8,
+    .prescale    = 255U,
+};
+
+/*
+ * Timer load value (where the counter starts from) is calculated as (timerPeriod * timerClockFreq) - 1
+ * TIMER_1_INST_LOAD_VALUE = (400 ms * 39062.5 Hz) - 1
+ */
+static const DL_TimerA_TimerConfig gTIMER_1TimerConfig = {
+    .period     = TIMER_1_INST_LOAD_VALUE,
+    .timerMode  = DL_TIMER_TIMER_MODE_ONE_SHOT,
+    .startTimer = DL_TIMER_STOP,
+};
+
+SYSCONFIG_WEAK void SYSCFG_DL_TIMER_1_init(void) {
+
+    DL_TimerA_setClockConfig(TIMER_1_INST,
+        (DL_TimerA_ClockConfig *) &gTIMER_1ClockConfig);
+
+    DL_TimerA_initTimerMode(TIMER_1_INST,
+        (DL_TimerA_TimerConfig *) &gTIMER_1TimerConfig);
+    DL_TimerA_enableInterrupt(TIMER_1_INST , DL_TIMERA_INTERRUPT_ZERO_EVENT);
+    DL_TimerA_enableClock(TIMER_1_INST);
+
+
+
+
+
+}
+
+
+
 static const DL_UART_Main_ClockConfig gUART_0ClockConfig = {
     .clockSel    = DL_UART_MAIN_CLOCK_BUSCLK,
     .divideRatio = DL_UART_MAIN_CLOCK_DIVIDE_RATIO_1
@@ -433,13 +527,22 @@ static const DL_ADC12_ClockConfig gADC1ClockConfig = {
 SYSCONFIG_WEAK void SYSCFG_DL_ADC1_init(void)
 {
     DL_ADC12_setClockConfig(ADC1_INST, (DL_ADC12_ClockConfig *) &gADC1ClockConfig);
+
+    DL_ADC12_initSeqSample(ADC1_INST,
+        DL_ADC12_REPEAT_MODE_DISABLED, DL_ADC12_SAMPLING_SOURCE_AUTO, DL_ADC12_TRIG_SRC_SOFTWARE,
+        DL_ADC12_SEQ_START_ADDR_00, DL_ADC12_SEQ_END_ADDR_01, DL_ADC12_SAMP_CONV_RES_12_BIT,
+        DL_ADC12_SAMP_CONV_DATA_FORMAT_UNSIGNED);
     DL_ADC12_configConversionMem(ADC1_INST, ADC1_ADCMEM_0,
         DL_ADC12_INPUT_CHAN_0, DL_ADC12_REFERENCE_VOLTAGE_VDDA, DL_ADC12_SAMPLE_TIMER_SOURCE_SCOMP0, DL_ADC12_AVERAGING_MODE_DISABLED,
         DL_ADC12_BURN_OUT_SOURCE_DISABLED, DL_ADC12_TRIGGER_MODE_AUTO_NEXT, DL_ADC12_WINDOWS_COMP_MODE_DISABLED);
-    DL_ADC12_setSampleTime0(ADC1_INST,400);
+    DL_ADC12_configConversionMem(ADC1_INST, ADC1_ADCMEM_1,
+        DL_ADC12_INPUT_CHAN_1, DL_ADC12_REFERENCE_VOLTAGE_VDDA, DL_ADC12_SAMPLE_TIMER_SOURCE_SCOMP0, DL_ADC12_AVERAGING_MODE_DISABLED,
+        DL_ADC12_BURN_OUT_SOURCE_DISABLED, DL_ADC12_TRIGGER_MODE_AUTO_NEXT, DL_ADC12_WINDOWS_COMP_MODE_DISABLED);
+    DL_ADC12_setSampleTime0(ADC1_INST,40);
+    DL_ADC12_setSampleTime1(ADC1_INST,40);
     /* Enable ADC12 interrupt */
-    DL_ADC12_clearInterruptStatus(ADC1_INST,(DL_ADC12_INTERRUPT_MEM0_RESULT_LOADED));
-    DL_ADC12_enableInterrupt(ADC1_INST,(DL_ADC12_INTERRUPT_MEM0_RESULT_LOADED));
+    DL_ADC12_clearInterruptStatus(ADC1_INST,(DL_ADC12_INTERRUPT_MEM1_RESULT_LOADED));
+    DL_ADC12_enableInterrupt(ADC1_INST,(DL_ADC12_INTERRUPT_MEM1_RESULT_LOADED));
     DL_ADC12_enableConversions(ADC1_INST);
 }
 /* ADC0 Initialization */

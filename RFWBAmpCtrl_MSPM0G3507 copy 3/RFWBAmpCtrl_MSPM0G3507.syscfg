@@ -15,6 +15,7 @@ const GPIO          = scripting.addModule("/ti/driverlib/GPIO", {}, false);
 const GPIO1         = GPIO.addInstance();
 const GPIO2         = GPIO.addInstance();
 const GPIO3         = GPIO.addInstance();
+const GPIO4         = GPIO.addInstance();
 const PWM           = scripting.addModule("/ti/driverlib/PWM", {}, false);
 const PWM1          = PWM.addInstance();
 const PWM2          = PWM.addInstance();
@@ -51,19 +52,24 @@ pinFunction3.peripheral.$assign            = "SYSCTL";
 pinFunction3.peripheral.hfclkInPin.$assign = "PA6";
 
 ADC121.$name                             = "ADC1";
-ADC121.enabledInterrupts                 = ["DL_ADC12_INTERRUPT_MEM0_RESULT_LOADED"];
 ADC121.sampClkSrc                        = "DL_ADC12_CLOCK_HFCLK";
-ADC121.sampleTime0                       = "10 us";
+ADC121.samplingOperationMode             = "sequence";
+ADC121.endAdd                            = 1;
+ADC121.adcMem1chansel                    = "DL_ADC12_INPUT_CHAN_1";
+ADC121.enabledInterrupts                 = ["DL_ADC12_INTERRUPT_MEM1_RESULT_LOADED"];
+ADC121.sampleTime0                       = "1us";
+ADC121.sampleTime1                       = "1us";
 ADC121.peripheral.$assign                = "ADC1";
 ADC121.peripheral.adcPin0.$assign        = "PA15";
 ADC121.adcPin0Config.hideOutputInversion = scripting.forceWrite(false);
 ADC121.adcPin0Config.$name               = "ti_driverlib_gpio_GPIOPinGeneric8";
+ADC121.adcPin1Config.$name               = "ti_driverlib_gpio_GPIOPinGeneric10";
 
 ADC122.$name               = "ADC0";
 ADC122.sampClkSrc          = "DL_ADC12_CLOCK_HFCLK";
 ADC122.enabledInterrupts   = ["DL_ADC12_INTERRUPT_MEM0_RESULT_LOADED"];
 ADC122.adcMem0chansel      = "DL_ADC12_INPUT_CHAN_2";
-ADC122.sampleTime0         = "1 us";
+ADC122.sampleTime0         = "0.5 us";
 ADC122.adcPin2Config.$name = "ti_driverlib_gpio_GPIOPinGeneric7";
 
 const Board                       = scripting.addModule("/ti/driverlib/Board", {}, false);
@@ -138,6 +144,11 @@ GPIO3.associatedPins[3].assignedPin  = "8";
 GPIO3.associatedPins[4].$name        = "DDS_RST";
 GPIO3.associatedPins[4].assignedPort = "PORTA";
 GPIO3.associatedPins[4].assignedPin  = "9";
+
+GPIO4.$name                          = "GPIO_RELAY";
+GPIO4.associatedPins[0].$name        = "relay1";
+GPIO4.associatedPins[0].assignedPort = "PORTA";
+GPIO4.associatedPins[0].assignedPin  = "22";
 
 PWM1.$name                              = "PWM_LED_RG";
 PWM1.timerStartTimer                    = true;
@@ -226,6 +237,7 @@ scripting.suppress("Migrating requires going through the Switch Board or Device 
  * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
  * re-solve from scratch.
  */
+ADC121.peripheral.adcPin1.$suggestSolution   = "PA16";
 ADC122.peripheral.$suggestSolution           = "ADC0";
 ADC122.peripheral.adcPin2.$suggestSolution   = "PA25";
 GPIO3.associatedPins[0].pin.$suggestSolution = "PA7";
@@ -233,4 +245,5 @@ GPIO3.associatedPins[1].pin.$suggestSolution = "PB2";
 GPIO3.associatedPins[2].pin.$suggestSolution = "PB3";
 GPIO3.associatedPins[3].pin.$suggestSolution = "PA8";
 GPIO3.associatedPins[4].pin.$suggestSolution = "PA9";
+GPIO4.associatedPins[0].pin.$suggestSolution = "PA22";
 UART1.peripheral.$suggestSolution            = "UART0";
