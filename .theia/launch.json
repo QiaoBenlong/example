@@ -103,6 +103,15 @@
                 "name": "RFWBAmpCtrl_MSPM0G3507 copy 6",
                 "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 6"
             }
+        },
+        {
+            "name": "RFWBAmpCtrl_MSPM0G3507 copy 8",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "RFWBAmpCtrl_MSPM0G3507 copy 8",
+                "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 8"
+            }
         }
     ]
 }
