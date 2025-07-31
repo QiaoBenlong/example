@@ -24,10 +24,10 @@ void UI_taskShow1(void){
 void UI_taskShow2(void)
 {
     // UART2_printf("home.t0.txt=\"%.4f\"\xff\xff\xff",v3);
-    UART2_printf("home.t5.txt=\"%.1f\"\xff\xff\xff",freq/1000000);
-    UART2_printf("home.t9.txt=\"%.4f\"\xff\xff\xff",Volt1);
-    UART2_printf("home.t10.txt=\"%.4f\"\xff\xff\xff",Volt2);
-    UART2_printf("home.t11.txt=\"%.4f\"\xff\xff\xff",amp_measured);
+    UART2_printf("two.t14.txt=\"%d\"\xff\xff\xff",toggle_flag);
+    UART2_printf("two.t9.txt=\"%.4f\"\xff\xff\xff",Volt1);
+    UART2_printf("two.t12.txt=\"%.4f\"\xff\xff\xff",Volt2);
+    UART2_printf("two.t13.txt=\"%.4f\"\xff\xff\xff",amp_measured);
 }
 
 void UI_taskShow3(void)

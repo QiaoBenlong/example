@@ -134,34 +134,34 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-RFWBAmpCtrl_MSPM0G3507\ copy\ 5.out 
+RFWBAmpCtrl_MSPM0G3507\ copy\ 9.out 
 
 EXE_OUTPUTS__QUOTED += \
-"RFWBAmpCtrl_MSPM0G3507 copy 5.out" 
+"RFWBAmpCtrl_MSPM0G3507 copy 9.out" 
 
 BIN_OUTPUTS += \
-RFWBAmpCtrl_MSPM0G3507\ copy\ 5.txt 
+RFWBAmpCtrl_MSPM0G3507\ copy\ 9.txt 
 
 BIN_OUTPUTS__QUOTED += \
-"RFWBAmpCtrl_MSPM0G3507 copy 5.txt" 
+"RFWBAmpCtrl_MSPM0G3507 copy 9.txt" 
 
 
 # All Target
 all: $(OBJS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "RFWBAmpCtrl_MSPM0G3507 copy 5.out" secondary-outputs
+	@$(MAKE) --no-print-directory -Onone "RFWBAmpCtrl_MSPM0G3507 copy 9.out" secondary-outputs
 
 # Tool invocations
-RFWBAmpCtrl_MSPM0G3507\ copy\ 5.out: $(OBJS) $(GEN_CMDS)
+RFWBAmpCtrl_MSPM0G3507\ copy\ 9.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"RFWBAmpCtrl_MSPM0G3507 copy 5.map" -Wl,-i"C:/ti/mspm0_sdk_2_01_00_03/source" -Wl,-i"D:/git/example/RFWBAmpCtrl_MSPM0G3507 copy 5/Debug/syscfg" -Wl,-i"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="RFWBAmpCtrl_MSPM0G3507 copy 5_linkInfo.xml" -Wl,--rom_model -o "RFWBAmpCtrl_MSPM0G3507 copy 5.out" $(ORDERED_OBJS)
+	"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" @"syscfg/device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"RFWBAmpCtrl_MSPM0G3507 copy 9.map" -Wl,-i"C:/ti/mspm0_sdk_2_01_00_03/source" -Wl,-i"D:/git/example/RFWBAmpCtrl_MSPM0G3507 copy 9/Debug/syscfg" -Wl,-i"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="RFWBAmpCtrl_MSPM0G3507 copy 9_linkInfo.xml" -Wl,--rom_model -o "RFWBAmpCtrl_MSPM0G3507 copy 9.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
-RFWBAmpCtrl_MSPM0G3507\ copy\ 5.txt: $(EXE_OUTPUTS)
+RFWBAmpCtrl_MSPM0G3507\ copy\ 9.txt: $(EXE_OUTPUTS)
 	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: Arm Hex Utility'
-	"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmhex.exe" --diag_wrap=off --ti_txt -o "RFWBAmpCtrl_MSPM0G3507 copy 5.txt" $(EXE_OUTPUTS__QUOTED)
+	"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmhex.exe" --diag_wrap=off --ti_txt -o "RFWBAmpCtrl_MSPM0G3507 copy 9.txt" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 

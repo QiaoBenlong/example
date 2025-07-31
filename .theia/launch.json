@@ -112,6 +112,24 @@
                 "name": "RFWBAmpCtrl_MSPM0G3507 copy 8",
                 "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 8"
             }
+        },
+        {
+            "name": "RFWBAmpCtrl_MSPM0G3507 copy 9",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "RFWBAmpCtrl_MSPM0G3507 copy 9",
+                "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 9"
+            }
+        },
+        {
+            "name": "RFWBAmpCtrl_MSPM0G3507 copy 11",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "RFWBAmpCtrl_MSPM0G3507 copy 11",
+                "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 11"
+            }
         }
     ]
 }

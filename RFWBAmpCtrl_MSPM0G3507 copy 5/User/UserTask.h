@@ -49,8 +49,19 @@ extern volatile int index_min;
 extern volatile float length;
 extern volatile float length_raw;
 extern volatile int type_flag;
+extern volatile float smoothed_amp_length[];
+extern volatile float freq_min_raw;
+extern volatile int Short_flag;
+extern volatile int sweep_times;
+extern volatile int function_1_flag;
+extern volatile int DC_AC;  
+extern volatile int Short_flag1;
+extern volatile int Short_flag2;
+extern volatile int Short_flag3;
+extern volatile int Short_flag4;
 
 
+void smooth_amp_length(float input[], float output[], int size);
 void Shift_12(void);
 void Shift_36(void);
 void Shift_45(void);
@@ -62,6 +73,7 @@ void UserTask_ENC(void);
 void Shift_DC(void);
 void Shift_AC(void);
 extern void initSweepParam(void);
+extern void initSweepParamLog(void);
 extern void get_length(void);
 extern void length_measure_init(void);
 

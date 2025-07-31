@@ -204,8 +204,18 @@ extern "C" {
 #define ADC0_ADCMEM_0                                         DL_ADC12_MEM_IDX_0
 #define ADC0_ADCMEM_0_REF                        DL_ADC12_REFERENCE_VOLTAGE_VDDA
 #define ADC0_ADCMEM_0_REF_VOLTAGE_V                                          3.3
+#define ADC0_ADCMEM_1                                         DL_ADC12_MEM_IDX_1
+#define ADC0_ADCMEM_1_REF                        DL_ADC12_REFERENCE_VOLTAGE_VDDA
+#define ADC0_ADCMEM_1_REF_VOLTAGE_V                                          3.3
+#define ADC0_ADCMEM_2                                         DL_ADC12_MEM_IDX_2
+#define ADC0_ADCMEM_2_REF                        DL_ADC12_REFERENCE_VOLTAGE_VDDA
+#define ADC0_ADCMEM_2_REF_VOLTAGE_V                                          3.3
 #define GPIO_ADC0_C2_PORT                                                  GPIOA
 #define GPIO_ADC0_C2_PIN                                          DL_GPIO_PIN_25
+#define GPIO_ADC0_C1_PORT                                                  GPIOA
+#define GPIO_ADC0_C1_PIN                                          DL_GPIO_PIN_26
+#define GPIO_ADC0_C0_PORT                                                  GPIOA
+#define GPIO_ADC0_C0_PIN                                          DL_GPIO_PIN_27
 
 
 
@@ -243,26 +253,26 @@ extern "C" {
 #define GPIO_ENC_ENC_SW_PORT                                             (GPIOA)
 #define GPIO_ENC_ENC_SW_PIN                                     (DL_GPIO_PIN_12)
 #define GPIO_ENC_ENC_SW_IOMUX                                    (IOMUX_PINCM34)
-/* Defines for DDS_SCLK: GPIOA.7 with pinCMx 14 on package pin 13 */
+/* Defines for DDS_SCLK: GPIOA.8 with pinCMx 19 on package pin 16 */
 #define GPIO_DDS_DDS_SCLK_PORT                                           (GPIOA)
-#define GPIO_DDS_DDS_SCLK_PIN                                    (DL_GPIO_PIN_7)
-#define GPIO_DDS_DDS_SCLK_IOMUX                                  (IOMUX_PINCM14)
-/* Defines for DDS_SDIO0: GPIOB.2 with pinCMx 15 on package pin 14 */
-#define GPIO_DDS_DDS_SDIO0_PORT                                          (GPIOB)
-#define GPIO_DDS_DDS_SDIO0_PIN                                   (DL_GPIO_PIN_2)
-#define GPIO_DDS_DDS_SDIO0_IOMUX                                 (IOMUX_PINCM15)
+#define GPIO_DDS_DDS_SCLK_PIN                                    (DL_GPIO_PIN_8)
+#define GPIO_DDS_DDS_SCLK_IOMUX                                  (IOMUX_PINCM19)
+/* Defines for DDS_SDIO0: GPIOA.9 with pinCMx 20 on package pin 17 */
+#define GPIO_DDS_DDS_SDIO0_PORT                                          (GPIOA)
+#define GPIO_DDS_DDS_SDIO0_PIN                                   (DL_GPIO_PIN_9)
+#define GPIO_DDS_DDS_SDIO0_IOMUX                                 (IOMUX_PINCM20)
 /* Defines for DDS_CS: GPIOB.3 with pinCMx 16 on package pin 15 */
 #define GPIO_DDS_DDS_CS_PORT                                             (GPIOB)
 #define GPIO_DDS_DDS_CS_PIN                                      (DL_GPIO_PIN_3)
 #define GPIO_DDS_DDS_CS_IOMUX                                    (IOMUX_PINCM16)
-/* Defines for DDS_UPDATE: GPIOA.8 with pinCMx 19 on package pin 16 */
-#define GPIO_DDS_DDS_UPDATE_PORT                                         (GPIOA)
-#define GPIO_DDS_DDS_UPDATE_PIN                                  (DL_GPIO_PIN_8)
-#define GPIO_DDS_DDS_UPDATE_IOMUX                                (IOMUX_PINCM19)
-/* Defines for DDS_RST: GPIOA.9 with pinCMx 20 on package pin 17 */
+/* Defines for DDS_UPDATE: GPIOB.2 with pinCMx 15 on package pin 14 */
+#define GPIO_DDS_DDS_UPDATE_PORT                                         (GPIOB)
+#define GPIO_DDS_DDS_UPDATE_PIN                                  (DL_GPIO_PIN_2)
+#define GPIO_DDS_DDS_UPDATE_IOMUX                                (IOMUX_PINCM15)
+/* Defines for DDS_RST: GPIOA.7 with pinCMx 14 on package pin 13 */
 #define GPIO_DDS_DDS_RST_PORT                                            (GPIOA)
-#define GPIO_DDS_DDS_RST_PIN                                     (DL_GPIO_PIN_9)
-#define GPIO_DDS_DDS_RST_IOMUX                                   (IOMUX_PINCM20)
+#define GPIO_DDS_DDS_RST_PIN                                     (DL_GPIO_PIN_7)
+#define GPIO_DDS_DDS_RST_IOMUX                                   (IOMUX_PINCM14)
 /* Port definition for Pin Group GPIO_RELAY */
 #define GPIO_RELAY_PORT                                                  (GPIOA)
 
@@ -272,21 +282,24 @@ extern "C" {
 /* Defines for relay2: GPIOA.5 with pinCMx 10 on package pin 11 */
 #define GPIO_RELAY_relay2_PIN                                    (DL_GPIO_PIN_5)
 #define GPIO_RELAY_relay2_IOMUX                                  (IOMUX_PINCM10)
+/* Defines for relay3: GPIOA.13 with pinCMx 35 on package pin 28 */
+#define GPIO_RELAY_relay3_PIN                                   (DL_GPIO_PIN_13)
+#define GPIO_RELAY_relay3_IOMUX                                  (IOMUX_PINCM35)
 /* Port definition for Pin Group GPIO_RFC */
 #define GPIO_RFC_PORT                                                    (GPIOA)
 
-/* Defines for UP_B: GPIOA.0 with pinCMx 1 on package pin 1 */
-#define GPIO_RFC_UP_B_PIN                                        (DL_GPIO_PIN_0)
-#define GPIO_RFC_UP_B_IOMUX                                       (IOMUX_PINCM1)
-/* Defines for UP_A: GPIOA.1 with pinCMx 2 on package pin 2 */
-#define GPIO_RFC_UP_A_PIN                                        (DL_GPIO_PIN_1)
-#define GPIO_RFC_UP_A_IOMUX                                       (IOMUX_PINCM2)
-/* Defines for DOWN_B: GPIOA.28 with pinCMx 3 on package pin 3 */
-#define GPIO_RFC_DOWN_B_PIN                                     (DL_GPIO_PIN_28)
-#define GPIO_RFC_DOWN_B_IOMUX                                     (IOMUX_PINCM3)
-/* Defines for DOWN_A: GPIOA.31 with pinCMx 6 on package pin 5 */
-#define GPIO_RFC_DOWN_A_PIN                                     (DL_GPIO_PIN_31)
-#define GPIO_RFC_DOWN_A_IOMUX                                     (IOMUX_PINCM6)
+/* Defines for UP_B: GPIOA.1 with pinCMx 2 on package pin 2 */
+#define GPIO_RFC_UP_B_PIN                                        (DL_GPIO_PIN_1)
+#define GPIO_RFC_UP_B_IOMUX                                       (IOMUX_PINCM2)
+/* Defines for UP_A: GPIOA.0 with pinCMx 1 on package pin 1 */
+#define GPIO_RFC_UP_A_PIN                                        (DL_GPIO_PIN_0)
+#define GPIO_RFC_UP_A_IOMUX                                       (IOMUX_PINCM1)
+/* Defines for DOWN_B: GPIOA.31 with pinCMx 6 on package pin 5 */
+#define GPIO_RFC_DOWN_B_PIN                                     (DL_GPIO_PIN_31)
+#define GPIO_RFC_DOWN_B_IOMUX                                     (IOMUX_PINCM6)
+/* Defines for DOWN_A: GPIOA.28 with pinCMx 3 on package pin 3 */
+#define GPIO_RFC_DOWN_A_PIN                                     (DL_GPIO_PIN_28)
+#define GPIO_RFC_DOWN_A_IOMUX                                     (IOMUX_PINCM3)
 
 
 

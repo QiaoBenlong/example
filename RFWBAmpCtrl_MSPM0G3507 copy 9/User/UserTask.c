@@ -366,26 +366,48 @@ void initSingleToneParam(void) {
 
 void initSweepParam(void) {
 
-   // CH0:1MHz ~ 40MHz 线性扫频   
-    Sweep[0].amp = 1023;                // 幅度最大(1023)
-    Sweep[0].phase = 0;                 // 相位0度(0)
-    Sweep[0].start = freq_start*1000000;   
-    // Sweep[0].start = 10E6F;          
-    Sweep[0].step = freq_step*1000;                // 步进频率100Hz
-    Sweep[0].end = freq_end*1000000;              // 终止频率100kHz
-    Sweep[0].type = DDS_SWEEP_FREQ;     // 扫频
-    Sweep[0].method = DDS_SWEEP_LINEAR; // 线性扫描
+//    // CH0:1MHz ~ 40MHz 线性扫频   
+//     Sweep[0].amp = 1023;                // 幅度最大(1023)
+//     Sweep[0].phase = 0;                 // 相位0度(0)
+//     Sweep[0].start = freq_start*1000000;   
+//     // Sweep[0].start = 10E6F;          
+//     Sweep[0].step = freq_step*1000;                // 步进频率100Hz
+//     Sweep[0].end = freq_end*1000000;              // 终止频率100kHz
+//     Sweep[0].type = DDS_SWEEP_FREQ;     // 扫频
+//     Sweep[0].method = DDS_SWEEP_LINEAR; // 线性扫描
 
 
 
-    // CH1:1MHz ~ 40MHz 线性扫频   
-    Sweep[1].amp = 1023;                // 幅度最大(1023)
-    Sweep[1].phase = 8192;                 // 相位180度(8192)
-    Sweep[1].start = freq_start*1000000;              // 起始频率
-    Sweep[1].step = freq_step*1000;                // 步进频率
-    Sweep[1].end = freq_end*1000000;              // 终止频率100kHz
-    Sweep[1].type = DDS_SWEEP_FREQ;     // 扫频
-    Sweep[1].method = DDS_SWEEP_LINEAR; // 线性扫描
+//     // CH1:1MHz ~ 40MHz 线性扫频   
+//     Sweep[1].amp = 1023;                // 幅度最大(1023)
+//     Sweep[1].phase = 8192;                 // 相位180度(8192)
+//     Sweep[1].start = freq_start*1000000;              // 起始频率
+//     Sweep[1].step = freq_step*1000;                // 步进频率
+//     Sweep[1].end = freq_end*1000000;              // 终止频率100kHz
+//     Sweep[1].type = DDS_SWEEP_FREQ;     // 扫频
+//     Sweep[1].method = DDS_SWEEP_LINEAR; // 线性扫描
+
+        // 1Hz ~ 1MHz 对数扫频
+    Sweep[0].freq = 1;                       // 频率1Hz
+    Sweep[0].amp = 1023;                     // 幅度最大(1023)
+    Sweep[0].phase = 0;                      // 相位0度(0)
+    Sweep[0].start = 1E5F;                      // 起始频率100kHz
+    Sweep[0].step = 1.003459849;            // 步进系数(1000次根号1000)
+    Sweep[0].end = 100E6F;                     // 终止频率100MHz
+    Sweep[0].type = DDS_SWEEP_FREQ;          // 扫频
+    Sweep[0].method = DDS_SWEEP_LOGARITHMIC; // 对数扫描
+
+
+        // 1Hz ~ 1MHz 对数扫频
+    Sweep[1].freq = 1;                       // 频率1Hz
+    Sweep[1].amp = 1023;                     // 幅度最大(1023)
+    Sweep[1].phase = 8192;                      // 相位0度(0)
+    Sweep[1].start = 1E5F;                      // 起始频率100kHz
+    // Sweep[1].step = 1.013911386F;            // 步进系数(1000次根号1000000)
+    Sweep[1].step = 1.003459849F;
+    Sweep[1].end = 100E6F;                     // 终止频率100MHz
+    Sweep[1].type = DDS_SWEEP_FREQ;          // 扫频
+    Sweep[1].method = DDS_SWEEP_LOGARITHMIC; // 对数扫描
 
 
     // // 1kHz ~ 100kHz 线性扫频

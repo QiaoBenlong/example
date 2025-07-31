@@ -19,7 +19,7 @@
 #define RGB_LED_TIME 10 // RGBLED渐变间隔(ms)
 #define UART_TIME 1000 // 串口发送间隔(ms)
 #define GAIN_CTRL_TIME 10 // 增益控制间隔(ms)
-#define DDS_SWEEP_TIME 1 // DDS扫描间隔(ms)
+#define DDS_SWEEP_TIME 2 // DDS扫描间隔(ms)
 #define DDS_SWEEP_TIME_SET  ((2000*freq_step)/(freq_end - freq_start)) * DDS_SWEEP_TIME
 
 #define FREQ_TO_LENGTH(x) (9.93e9f / (float)x ) * 1.5754 - 139.14//加入公式

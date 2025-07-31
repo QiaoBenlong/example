@@ -16,12 +16,12 @@ volatile float data_of_test = 0;            // 用于传输数据的数字
 volatile float freq_start = 0;
 volatile float freq_end = 0;
 volatile float freq_step = 0;
-volatile int print_flag = 0;
-volatile int order_flag = 0;
-volatile int start_flag = 0;
-volatile int DDS_start = 0;
-volatile int shift_flag = 0;
-volatile int calculate_flag = 0;
+volatile int print_flag = 0;                //判断线缆类型过程的flag，flag=1则开始判断，flag=2则判断完成
+volatile int order_flag = 0;                //判断线序的flag
+volatile int start_flag = 0;                //开始判断线序的flag
+volatile int DDS_start = 0;                 //将初始化数据正式写入DDS的标志位
+volatile int shift_flag = 0;                //切换四选一的标志
+volatile int calculate_flag = 0;            //交流损耗计算标志（目前未使用）
 
 corrent_operating_t corrent_operating = initial; //当前工作状态
 
@@ -118,68 +118,68 @@ void UART2_IRQHandler(void)
         }
         else if (received_data == 0x13)
         {
-            //设置起始频率
             // freq_start = data_of_test;
             // DDS_start = 1;
             length_measure_init();
+            function_1_flag = 0;
         }
-        else if (received_data == 0x14)
-        {
-            //设置终止频率
-            freq_end = data_of_test;
-            DDS_start = 1;
-        }
-        else if (received_data == 0x15)
-        {
-            //设置步进值
-            freq_step = data_of_test;
-            DDS_start = 1;
-        }
-        else if (received_data == 0x18)
-        {
-            print_flag = 1;            
-        }
-        // else if (received_data == 0x25)
+        // else if (received_data == 0x14)
         // {
-        //     flag = 3;
+        //     //设置终止频率
+        //     freq_end = data_of_test;
+        //     DDS_start = 1;
+        // }
+        // else if (received_data == 0x15)
+        // {
+        //     //设置步进值
+        //     freq_step = data_of_test;
+        //     DDS_start = 1;
+        // }
+        // else if (received_data == 0x18)
+        // {
+        //     print_flag = 1;            
         // }
 
-        else if (received_data == 0x17)
+        else if (received_data == 0x15)//双端的上一页
         {
-            flag=0;
+            flag=0;                     
+        }
+        else if (received_data == 0x14)//单端的下一页
+        {
+            flag=6;
         }
         else if (received_data == 0x16)
         {
-            flag=1;
+            print_flag = 1;
         }
-        else if (received_data == 0x19)
-        {
-            flag=2;
-        }
-        else if (received_data == 0x25)
-        {
-            flag=3;
-        }
+        // else if (received_data == 0x19)
+        // {
+        //     flag=2;
+        // }
+        // else if (received_data == 0x25)
+        // {
+        //     flag=3;
+        // }
         else if (received_data == 0x20)
         {
             start_flag=1;
         }
-        else if (received_data == 0x21)
-        {
-            shift_flag = 1;
-        }
-        else if (received_data == 0x22)
-        {
-            shift_flag = 2;
-        }
-        else if (received_data == 0x23)
-        {
-            shift_flag = 3;
-        }
-        else if (received_data == 0x24)
-        {
-            shift_flag = 4;
-        }
+        // else if (received_data == 0x21)
+        // {
+        //     shift_flag = 1;
+        // }
+        // else if (received_data == 0x22)
+        // {
+        //     shift_flag = 2;
+        // }
+        // else if (received_data == 0x23)
+        // {
+        //     shift_flag = 3;
+        // }
+        // else if (received_data == 0x24)
+        // {
+        //     shift_flag = 4;
+        // }
 
         // else if (received_data == 0x18)
         // {

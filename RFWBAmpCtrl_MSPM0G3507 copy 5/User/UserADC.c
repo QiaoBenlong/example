@@ -229,6 +229,7 @@ void UserTask_ADC(void)
     DL_ADC12_startConversion(ADC0_INST);
     while(false == gCheckADC){}
     gAdcResult = DL_ADC12_getMemResult(ADC0_INST,DL_ADC12_MEM_IDX_0);//A25
+                //测电阻 A26
     Vol_temp = ADC_VAL_TO_VOLTAGE(gAdcResult);
     // amp_length[Cnt] = ADC_VAL_TO_VOLTAGE(gAdcResult);
     // sum += Vol_temp;
@@ -251,13 +252,13 @@ void UserTask_ADC1(void)
 {
     DL_ADC12_startConversion(ADC1_INST);
     while(false == gCheckADC1){}//waiting....
-    gAdcResult1 = DL_ADC12_getMemResult(ADC1_INST,DL_ADC12_MEM_IDX_0);//A15
-    gAdcResult2 = DL_ADC12_getMemResult(ADC1_INST,DL_ADC12_MEM_IDX_1);//A16
-    gAdcResult3 = DL_ADC12_getMemResult(ADC1_INST,DL_ADC12_MEM_IDX_2);
+    gAdcResult1 = DL_ADC12_getMemResult(ADC1_INST,DL_ADC12_MEM_IDX_0);//A15，直接用直流 测量线序
+    gAdcResult2 = DL_ADC12_getMemResult(ADC1_INST,DL_ADC12_MEM_IDX_1);//A16，ad8302 1号 测量线种类
+    gAdcResult3 = DL_ADC12_getMemResult(ADC1_INST,DL_ADC12_MEM_IDX_2);//A17，电路诊断，直接用GPIO供直流，ADC接收
     // gAdcResult4 = DL_ADC12_getMemResult(ADC1_INST,DL_ADC12_MEM_IDX_3);
     v1 = ADC_VAL_TO_VOLTAGE(gAdcResult1);//ad8302 2号 测量线序
     amp_measured = ADC_VAL_TO_VOLTAGE(gAdcResult2);//ad8302 1号 测量线种类
-    v2 = ADC_VAL_TO_VOLTAGE(gAdcResult3);
+    v2 = ADC_VAL_TO_VOLTAGE(gAdcResult3);//电路诊断，直接用GPIO供直流，ADC接收
     // v3 = ADC_VAL_TO_VOLTAGE(gAdcResult4);
     sum1 += amp_measured;
     sampleCnt1++;
@@ -280,7 +281,7 @@ void UserTask_ADC1(void)
 void ADC0_INST_IRQHandler(void)
 {
     switch (DL_ADC12_getPendingInterrupt(ADC0_INST)) {
-        case DL_ADC12_IIDX_MEM0_RESULT_LOADED:
+        case DL_ADC12_IIDX_MEM2_RESULT_LOADED:
             gCheckADC = true;
             // freq_record[flag_i] = Sweep[0].now;
             // flag_i++;
