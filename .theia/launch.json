@@ -130,6 +130,33 @@
                 "name": "RFWBAmpCtrl_MSPM0G3507 copy 11",
                 "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 11"
             }
+        },
+        {
+            "name": "RFWBAmpCtrl_MSPM0G3507 copy 12",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "RFWBAmpCtrl_MSPM0G3507 copy 12",
+                "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 12"
+            }
+        },
+        {
+            "name": "RFWBAmpCtrl_MSPM0G3507 copy 13",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "RFWBAmpCtrl_MSPM0G3507 copy 13",
+                "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 13"
+            }
+        },
+        {
+            "name": "RFWBAmpCtrl_MSPM0G3507 copy 14",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "RFWBAmpCtrl_MSPM0G3507 copy 14",
+                "resourceId": "/RFWBAmpCtrl_MSPM0G3507 copy 14"
+            }
         }
     ]
 }

@@ -119,9 +119,8 @@ void UART2_IRQHandler(void)
         else if (received_data == 0x13)
         {
             // freq_start = data_of_test;
-            // DDS_start = 1;
-            length_measure_init();
-            function_1_flag = 0;
+            DDS_start = 9;
+            flag = 11;
         }
         // else if (received_data == 0x14)
         // {
@@ -140,17 +139,28 @@ void UART2_IRQHandler(void)
         //     print_flag = 1;            
         // }
 
-        else if (received_data == 0x15)//双端的上一页
+        else if (received_data == 0x15)//双端的下一页
         {
-            flag=0;                     
+            flag = 5;                     
         }
-        else if (received_data == 0x14)//单端的下一页
+        else if (received_data == 0x14)//单端的上一页
         {
-            flag=6;
+            flag = 0;
         }
         else if (received_data == 0x16)
         {
             print_flag = 1;
+            flag = 0;
+        }
+        else if (received_data == 0x17)
+        {
+            flag = 5;
+            DDS_start = 1;
+        }
+        else if (received_data == 0x18)
+        {
+            flag = 9;
+            DDS_start = 20;    
         }
         // else if (received_data == 0x19)
         // {
@@ -163,6 +173,10 @@ void UART2_IRQHandler(void)
         else if (received_data == 0x20)
         {
             start_flag=1;
+        }
+        else if (received_data == 0x21)
+        {
+            flag = 20;
         }
         // else if (received_data == 0x21)
         // {

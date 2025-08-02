@@ -30,6 +30,7 @@ extern volatile uint16_t RGBLEDTick;
 extern volatile uint16_t UARTTick;
 extern volatile uint16_t GainCtrlTick;
 extern volatile uint16_t SweepTick;
+extern volatile uint16_t TimeTick;
 extern volatile float freq;
 extern volatile int flag;
 extern volatile uint16_t amp;
@@ -59,9 +60,26 @@ extern volatile int Short_flag1;
 extern volatile int Short_flag2;
 extern volatile int Short_flag3;
 extern volatile int Short_flag4;
+extern volatile float Volt3;
+extern volatile float R_raw[];
+extern volatile float Ris;
+extern volatile float sum_R;
+extern volatile float sum_AC;
+extern volatile float Vol_final;
+extern volatile uint16_t amp1;
+extern volatile float Reduction;
+extern volatile float amp_max;
+extern volatile int index_max;
+extern volatile int index_1_short;
+extern volatile int index_2_short;
+extern volatile int index_min_short;
+extern volatile float length_short;
+extern volatile float length_short_raw;
+extern volatile float cross;
+extern volatile float Reduction_final;
 
 
-void smooth_amp_length(float input[], float output[], int size);
+extern void smooth_amp_length(float input[], float output[], int size);
 void Shift_12(void);
 void Shift_36(void);
 void Shift_45(void);
@@ -75,7 +93,9 @@ void Shift_AC(void);
 extern void initSweepParam(void);
 extern void initSweepParamLog(void);
 extern void get_length(void);
+extern void get_length_short(void);
 extern void length_measure_init(void);
+
 
 void AD_init(void);
 void AD_loop(void);

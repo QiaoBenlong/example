@@ -201,9 +201,13 @@ volatile uint16_t gAdcResult1;
 volatile uint16_t gAdcResult2;
 volatile uint16_t gAdcResult3;
 volatile uint16_t gAdcResult4;
+volatile uint16_t gAdc_R;
+volatile uint16_t gAdc_AC;
 volatile float getADC[RESULT_SIZE]; 
 volatile float amp_measured;
-volatile float Vol_temp;
+volatile float Vol_temp = 0;
+volatile float Vol_R = 0;
+volatile float Vol_AC = 0;
 volatile int sampleCnt = 0;
 volatile int Cnt = 0;
 volatile float sum = 0;
@@ -215,6 +219,7 @@ volatile float sum1 = 0;
 volatile float sampleCnt1 = 0;
 volatile int Cnt1 = 0;
 volatile float amp_length[RESULT_SIZE];
+
 
 void UserADC_init(void)
 {
@@ -229,8 +234,11 @@ void UserTask_ADC(void)
     DL_ADC12_startConversion(ADC0_INST);
     while(false == gCheckADC){}
     gAdcResult = DL_ADC12_getMemResult(ADC0_INST,DL_ADC12_MEM_IDX_0);//A25
-                //测电阻 A26
+    gAdc_R = DL_ADC12_getMemResult(ADC0_INST,DL_ADC12_MEM_IDX_1);//测电阻 A26
+    gAdc_AC = DL_ADC12_getMemResult(ADC0_INST,DL_ADC12_MEM_IDX_2);//测交流损耗 A27
     Vol_temp = ADC_VAL_TO_VOLTAGE(gAdcResult);
+    Vol_R = ADC_VAL_TO_VOLTAGE(gAdc_R);
+    Vol_AC = ADC_VAL_TO_VOLTAGE(gAdc_AC);
     // amp_length[Cnt] = ADC_VAL_TO_VOLTAGE(gAdcResult);
     // sum += Vol_temp;
     // sampleCnt++;
@@ -281,7 +289,7 @@ void UserTask_ADC1(void)
 void ADC0_INST_IRQHandler(void)
 {
     switch (DL_ADC12_getPendingInterrupt(ADC0_INST)) {
-        case DL_ADC12_IIDX_MEM2_RESULT_LOADED:
+        case DL_ADC12_IIDX_MEM3_RESULT_LOADED:
             gCheckADC = true;
             // freq_record[flag_i] = Sweep[0].now;
             // flag_i++;
